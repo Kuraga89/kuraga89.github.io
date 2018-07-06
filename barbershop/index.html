@@ -49,30 +49,33 @@
 			</ul>
 		</section>
 
-		<section class="news">
-			<h2>Новости</h2>
-			<ul class="news-list">
-				<li class="news-item">
-					<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-					<time datetime="2016-01-11">11 января</time>
-				</li>
-				<li class="news-item">
-					<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-					<time datetime="2016-01-18">11 января</time>
-				</li>
-			</ul>
-			<a href="news.html" class="button">Все новости</a>
-		</section>
+		<div class="index-columns">
+			<section class="news">
+				<h2>Новости</h2>
+				<ul class="news-list">
+					<li class="news-item">
+						<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+						<time datetime="2016-01-11">11 января</time>
+					</li>
+					<li class="news-item">
+						<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+						<time datetime="2016-01-18">11 января</time>
+					</li>
+				</ul>
+				<a href="news.html" class="button">Все новости</a>
+			</section>
 
-		<section class="gallery">
-			<h2>Фотогаллерея</h2>
-			<figure class="gallery-content">
-				<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
-			</figure>
-			<button class="button gallery-button gallery-button-back">Назад</button>
-			<button class="button gallery-button gallery-button-next">Вперед</button>
-		</section>
+			<section class="gallery">
+				<h2>Фотогаллерея</h2>
+				<figure class="gallery-content">
+					<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+				</figure>
+				<button class="button gallery-button gallery-button-back">Назад</button>
+				<button class="button gallery-button gallery-button-next">Вперед</button>
+			</section>
+		</div>
 
+		<div class="index-columns">
 		<section class="contacts">
 			<h2>Контактная информация</h2>
 			<p>
@@ -112,6 +115,7 @@
 				<button class="button" type="submit">Отправить</button>
 			</form>
 		</section>
+		</div>
 	</main>
 
 	<footer class="main-footer">
@@ -140,18 +144,18 @@
 		<p>Введите свой логин и пароль.</p>
 		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
-			<label class="visually-hidden" for="user-login">Логин</label>
+				<label class="visually-hidden" for="user-login">Логин</label>
 				<input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин">
 			</p>
 			<p>
-			<label class="visually-hidden" for="user-password">Пароль</label>
+				<label class="visually-hidden" for="user-password">Пароль</label>
 				<input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль">
 			</p>
 			<p class="login-password-info">
-			<label class="login-checkbox">
-				<input type="checkbox" name="remember" class="visually-hidden">
-				<span class="checkbox-indicator"></span>
-				Запомните меня
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkbox-indicator"></span>
+					Запомните меня
 				</label>
 				<a class="restore" href="#">Я забыл пароль</a>
 			</p>
