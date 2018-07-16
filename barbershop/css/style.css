@@ -1,3 +1,15 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.content-box-component {
+	box-sizing: content-box;
+}
+
 body {
 	margin: 0;
 	position: 0;
@@ -44,6 +56,12 @@ a {
 .button:focus,
 .button:active {
 	background-color: #663d15;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .main-navigation {
@@ -107,10 +125,11 @@ a {
 }
 
 .gallery-content {
-	background-color: #cccccc;
-	border: 7px solid #ffffff;
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+  padding: 0;
+  margin: 0;
 }
-
 
 .appoitment-item input {
 	font: inherit;
@@ -218,4 +237,126 @@ a {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.main-header {
+	margin-bottom: 75px;
+
+	/*Временно для сетки*/
+	min-height: 285px;
+}
+
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	/*Временно для сетки*/
+	min-height: 285px;
+	background-color: transparent;
+	
+}
+
+.main-header-logo {
+	width: 368px;
+	height: 153px;
+	order: 2;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 60px;
+
+	background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	padding: 0;
+	margin: 0;
+	width: 620px;
+
+	list-style: none;
+
+	/*Временно для сетки*/
+	min-height: 70px;
+}
+
+.user-navigation {
+	padding: 0;
+	margin: 0;
+	width: 140px;
+
+	list-style: none;
+
+	/*Временно для сетки*/
+	min-height: 70px;
+}
+
+.features {
+	margin-bottom: 80px;
+}
+
+.features-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+
+	list-style: none;
+
+	/*Временно для сетки*/
+	min-height: 170px;
+}
+
+.feature-item {
+	width: 300px;
+
+	/*Временно для сетки*/
+	min-height: 170px;
+}
+
+.index-columns {
+	padding: 50px 80px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
+.news {
+	width: 380px;
+
+	/*Временно для сетки*/
+	min-height: 315px;
+}
+
+.news-list {
+	padding: 0;
+	margin: 0;
+}
+
+.gallery {
+	width: 300px;
+
+	/*Временно для сетки*/
+	min-height: 315px;
+}
+
+.contacts {
+	width: 380px;
+}
+
+.appointment {
+	width: 300px;
+}
+
+.main-footer {
+	margin-top: 65px;
+	
+}
+
+
 
