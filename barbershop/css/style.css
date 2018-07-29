@@ -524,6 +524,33 @@ a {
 }
 
 
+.modal-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
+}
+
+/* ANIMATION */
+
+@keyframes bounce {
+	0% {transform: translateY(-2000px);}
+	70% {transform: translateY(30px);}
+	90% {transform: translateY(-10px);}
+	100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+	0%, 100%   							{transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80%      {transform: translateX(10px);}  
+}
+
+
 .modal-login {
 	top: 120px;
 	left: 50%;
@@ -737,7 +764,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-	margin-bottom: 75px;
+	margin-bottom: 50px;
 
 	background-color: #000000;
 }
@@ -896,9 +923,15 @@ input[type="radio"].visually-hidden {
 .page-title {
 	font-size: 30px;
 	line-height: 42px;
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
 }
 
 .breadcrumbs {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 50px;
 	list-style: none;
 }
 
@@ -917,6 +950,14 @@ input[type="radio"].visually-hidden {
 
 
 /* ITEM*/
+
+.product-photos {
+	width: 460px;
+}
+
+.product-info {
+	width: 390px;
+}
 
 .product-photo-preview {
 	list-style: none;
@@ -953,6 +994,11 @@ input[type="radio"].visually-hidden {
 
 /* SHOP */
 
+.filters {
+	width: 180px;
+
+}
+
 .filters fieldset {
 	border: none;
 }
@@ -977,13 +1023,34 @@ input[type="radio"].visually-hidden {
 	opacity: 0.5;
 }
 
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog {
+	width: 700px;
+}
+
 .catalog-list {
 	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
 }
 
 .catalog-item {
+	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	background-color: #f8f8f8;
 	box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.1); 
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -1017,6 +1084,9 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+	padding: 0;
+	margin: 0;
+
 	list-style: none;
 }
 
@@ -1048,6 +1118,10 @@ input[type="radio"].visually-hidden {
 
 /* FOOTER */
 
+.inner-page .main-footer {
+	margin-top: 45px;
+}
+
 .main-footer {
 	margin-top: 65px;
 	padding: 60px 0;	
@@ -1073,5 +1147,9 @@ input[type="radio"].visually-hidden {
 	width: 150px;
 	margin-left: auto;
 }
+
+
+
+
 
 
