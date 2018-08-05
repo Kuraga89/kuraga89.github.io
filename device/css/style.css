@@ -1,0 +1,19 @@
+@font-face {
+ font-family: "Gilroy ExtraBold";
+ src: url("/fonts/Gilroy-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Gilroy Light";
+ src: url("/fonts/Gilroy-Light.woff") format("woff");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+}
