@@ -1,19 +1,133 @@
 @font-face {
  font-family: "Gilroy ExtraBold";
- src: url("/fonts/Gilroy-ExtraBold.woff") format("woff");
+ src: url("../fonts/Gilroy-ExtraBold.woff") format("woff");
 }
 
 @font-face {
  font-family: "Gilroy Light";
- src: url("/fonts/Gilroy-Light.woff") format("woff");
+ src: url("../fonts/Gilroy-Light.woff") format("woff");
 }
 
 body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "OpenSans", Arial, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+
+.main-header-logo {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 48px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+	opacity: 0.6;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
+.user-navigation,
+.shop-navigation,
+.service-navigation,
+.catalog ul {
+	list-style: none;
+}
+
+.user-navigation a,
+.shop-navigation a,
+.service-navigation a,
+.catalog ul a{
+	color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.shop-navigation a:hover,
+.shop-navigation a:focus,
+.service-navigation a:hover,
+.service-navigation a:focus {
+	opacity: 0.6;
+}
+
+.user-navigation a:active,
+.shop-navigation a:active,
+.service-navigation a:active {
+	opacity: 0.3;
+}
+
+.service-navigation {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+}
+
+.service-navigation-catalog ul{
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	font-weight: 300;
+	text-transform: none;
+
+	list-style: none;
+	letter-spacing: normal;
+}
+
+/*MAIN*/
+
+.slider-list {
+	list-style: none;
+}
+
+.slide-info h3 {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: normal;
+}
+
+.slide-buttons {
+	list-style: none;
+}
+
+
+.slider-features span {
+	font-family: "Gilroy Light", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.popular-list {
+	list-style: none;
+}
+
+.popular-item a {
+	display: block;
+	color: #000000;
+}
+
+.popular-item-img {
+	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-item h4 {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.18px;
 }
