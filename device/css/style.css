@@ -18,17 +18,68 @@ body {
 	font-weight: 300;
 }
 
+
 a {
 	text-decoration: none;
 }
 
-/* HEADER */
+.button {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+	vertical-align: middle;
 
-.main-header-logo {
+	background-color: #ffffff;
+	border: none;
+
+	cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #f0c52e;
+}
+
+.button:active {
+	color: rgb(0, 0, 0, 0.3);
+}
+
+.logo {
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 48px;
 	line-height: 48px;
-	text-transform: uppercase;
+	text-transform: uppercase;	
+}
+
+
+/* HEADER */
+
+/* Main*/
+
+.main-header {
+	background-color: #f7e296;
+}
+
+.main-header .container {
+	width: 1040px;
+	margin: 0 auto;
+	padding: 0 60px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.top-navigation-wrapper {
+	display: flex;
+}
+
+
+
+
+.main-header-logo {
 	color: #000000;
 }
 
@@ -46,6 +97,12 @@ a {
 .service-navigation,
 .catalog ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-navigation {
+	margin-left: auto;  /* прижимаем user-navigation и shop-navigation вправо */
 }
 
 .user-navigation a,
@@ -70,6 +127,10 @@ a {
 	opacity: 0.3;
 }
 
+.logout-link a {
+	opacity: 0.3;
+}
+
 .service-navigation {
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
@@ -89,7 +150,42 @@ a {
 	letter-spacing: normal;
 }
 
+.main-header-search input {
+	font: inherit;
+	border: none;
+
+	background-color: transparent;
+}
+
+.search-button {
+	background-color: transparent;
+	border: 2px solid black;
+	display: none;
+	cursor: pointer;
+}
+
+.main-header-search input:focus {
+	border-bottom: 2px solid black;
+}
+
+.main-header-search input:focus + .search-button {
+	display: inline-block;
+}
+
+.main-header-search input:focus + .search-button:hover {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+/*Inner*/
+
+
+
+
 /*MAIN*/
+
+/*Main*/
 
 .slider-list {
 	list-style: none;
@@ -130,4 +226,211 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.18px;
+}
+
+/*SERVICE TAB*/
+
+.service {
+	display: flex;
+	flex-direction: column;
+}
+
+.service input {
+	display: none;
+}
+
+.service label {
+	cursor: pointer;
+
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+}
+
+.service-item {
+	display: flex;
+}
+
+.service-item h2 {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 0.18px;
+}
+
+.service .tab-content {
+	display: none;
+}
+
+.service input:checked + label {
+	color: #f7e184;
+
+	background-color: #000000;
+}
+
+.service input:checked + label + .tab-content {
+	display: block;
+}
+
+/*Inner*/
+.page-title {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 0.18px;
+}
+
+.breadcrums {
+	list-style: none;
+}
+
+.breadcrums a,
+.breadcrums-current {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.filters h4,
+.catalog-sort h4 {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters legend {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.18px;
+}
+
+.filters ul {
+	list-style: none;
+}
+
+.catalog-sort-type a {
+	font-size: 14px;
+	line-height: 18px;
+	opacity: 0.3;
+}
+
+.catalog-item h3 {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.18px;
+}
+
+.catalog-item-price {
+	font-family: "Gilroy Light", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.18px;
+}
+
+/*Pagination*/
+
+.pagination-content a {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.pagination-list a {
+	opacity: 0.3;
+}
+
+.pagination-item-current a {
+	opacity: 1.0;
+}
+
+/*BRANDS*/
+
+.brands-list {
+	list-style: none;
+}
+
+/*ABOUT, CONTACTS*/
+
+.index-columns h2 {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 0.18px;
+}
+
+.about-deliver {
+	list-style: none;
+}
+
+.deliver-item {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.18px;
+}
+
+/*FOOTER*/
+
+.main-footer {
+	color: #ffffff;
+
+	background-color: #464646;
+}
+
+.main-footer-logo {
+	color: #ffc600;
+}
+
+.footer-user-navigation,
+.footer-shop-navigation,
+.footer-service-navigation,
+.footer-social {
+	list-style: none;
+}
+
+.footer-user-navigation a,
+.footer-shop-navigation a,
+.footer-service-navigation a,
+.footer-social a {
+	color: #ffffff;
+}
+
+.footer-phone {
+	text-align: right;
+}
+
+.footer-service-navigation,
+.footer-social {
+	text-align: center;
+}
+
+/*MODAL*/
+
+.write-form label {
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: normal;
+	display: block;
+}
+
+.write-form input,
+.write-form textarea {
+	font: inherit;
+	font-size: 14px;
+
+	background-color: #f2f2f2;
+	border: none;
 }
