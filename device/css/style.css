@@ -8,6 +8,23 @@
  src: url("../fonts/Gilroy-Light.woff") format("woff");
 }
 
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.content-box-component {
+	box-sizing: content-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -54,33 +71,34 @@ a {
 	text-transform: uppercase;	
 }
 
+.container {
+	width: 1160px;
+	margin: 0 auto;
+
+}
+
 
 /* HEADER */
 
 /* Main*/
 
-.main-header {
-	background-color: #f7e296;
+.main-header {	
 }
 
-.main-header .container {
-	width: 1040px;
-	margin: 0 auto;
-	padding: 0 60px;
+.main-header .container {	
+	min-height: 140px;
+	
 
-	display: flex;
-	flex-direction: column;
+	
 }
-
-.top-navigation-wrapper {
-	display: flex;
-}
-
-
-
 
 .main-header-logo {
 	color: #000000;
+	display: block;
+	position: relative;
+	top: 20px;
+	left: 60px;
+	z-index: 1;
 }
 
 .main-header-logo:hover,
@@ -92,22 +110,58 @@ a {
 	opacity: 0.3;
 }
 
+.navigation-wrapper {
+	padding: 50px 60px 0 60px;
+	position: relative;
+
+	background-color: #f7e296;
+	min-height: 300px;
+}
+
+.navigation-top-wrapper {
+	display: flex;
+	margin-bottom: 45px;
+}
+
+.navigation-bottom-wrapper {
+	display: flex;
+}
+
+.catalog-menu {
+	display: none;
+}
+
+.service-navigation {
+	display: flex;
+}
+
+.service-navigation .contacts {
+	margin-left: auto;
+}
+
+.service-navigation .deliver {
+	margin-right: 50px;
+}
+
 .user-navigation,
 .shop-navigation,
 .service-navigation,
+.catalog-navigation,
 .catalog ul {
 	list-style: none;
-	margin: 0;
+	margin: 0; 
 	padding: 0;
 }
 
-.user-navigation {
-	margin-left: auto;  /* прижимаем user-navigation и shop-navigation вправо */
+.service-navigation {
+	width: 500px;
+	margin-left: auto;
 }
 
 .user-navigation a,
 .shop-navigation a,
 .service-navigation a,
+.catalog-navigation a,
 .catalog ul a{
 	color: #000000;
 }
@@ -116,6 +170,8 @@ a {
 .user-navigation a:focus,
 .shop-navigation a:hover,
 .shop-navigation a:focus,
+.catalog-navigation a:focus,
+.catalog-navigation a:hover,
 .service-navigation a:hover,
 .service-navigation a:focus {
 	opacity: 0.6;
@@ -127,11 +183,23 @@ a {
 	opacity: 0.3;
 }
 
+.shop-navigation {
+	width: 220px;
+}
+
+.user-navigation {
+	width: 260px;
+	margin-right: 20px;
+	margin-left: auto;
+}
+
+
 .logout-link a {
 	opacity: 0.3;
 }
 
-.service-navigation {
+.service-navigation,
+.catalog-navigation {
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -139,15 +207,25 @@ a {
 	letter-spacing: 3.6px;
 }
 
-.service-navigation-catalog ul{
+.catalog-navigation {
+	width: 300px;
+}
+
+.catalog-navigation ul{
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 36px;
 	font-weight: 300;
 	text-transform: none;
+	margin: 0;
+	padding: 0;
 
 	list-style: none;
 	letter-spacing: normal;
+}
+
+.main-header-search {
+	width: 400px;
 }
 
 .main-header-search input {
@@ -201,6 +279,18 @@ a {
 	list-style: none;
 }
 
+.slide-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slide-photo {
+	width: 560px;
+}
+
+.slide-info {
+	width: 500px;
+}
 
 .slider-features span {
 	font-family: "Gilroy Light", Arial, sans-serif;
@@ -210,6 +300,14 @@ a {
 
 .popular-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.popular-item {
+	width: 160px;
 }
 
 .popular-item a {
