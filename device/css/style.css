@@ -329,15 +329,29 @@ a {
 /*SERVICE TAB*/
 
 .service {
+	background-color: #e5e5e5;
+}
+
+.service-content {
 	display: flex;
-	flex-direction: column;
 }
 
-.service input {
-	display: none;
+.service-list-name,
+.service-description-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.service label {
+.service-list-name {
+	width: 280px;
+}
+
+.service-description-list {
+	width: 880px;
+}
+
+.service a {
 	cursor: pointer;
 
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
@@ -345,30 +359,25 @@ a {
 	line-height: 24px;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
+	color: #000000;
 }
 
-.service-item {
-	display: flex;
-}
 
-.service-item h2 {
+
+.service-description-list h2 {
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 0.18px;
+	margin: 0;
+	padding: 0;
 }
 
-.service .tab-content {
+.service-description-item {
 	display: none;
 }
 
-.service input:checked + label {
-	color: #f7e184;
-
-	background-color: #000000;
-}
-
-.service input:checked + label + .tab-content {
+.service-description-list .current {
 	display: block;
 }
 
@@ -456,10 +465,24 @@ a {
 /*BRANDS*/
 
 .brands-list {
+	display: flex;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
+.brand-item {
+	width: 280px;
+	margin-left: 10px
+	flex-wrap: wrap;
+}
+
+
 /*ABOUT, CONTACTS*/
+
+.index-columns {
+	display: flex;
+}
 
 .index-columns h2 {
 	font-family: "Gilroy ExtraBold", Arial, sans-serif;
@@ -487,9 +510,29 @@ a {
 	background-color: #464646;
 }
 
+.footer-navigation-top,
+.footer-navigation-middle {
+	display: flex;
+}
+
 .main-footer-logo {
 	color: #ffc600;
+	width: 180px;
 }
+
+.footer-contacts {
+	width: 280px;
+	margin-right: 80px;
+}
+
+.footer-shop-navigation {
+	margin-left: auto;
+}
+
+.footer-service-navigation {
+	width: 440px;
+}
+
 
 .footer-user-navigation,
 .footer-shop-navigation,
@@ -507,6 +550,7 @@ a {
 
 .footer-phone {
 	text-align: right;
+	margin-left: auto;
 }
 
 .footer-service-navigation,
