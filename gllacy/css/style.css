@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #323232;
+}
+
+.button {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 44px;
+	padding: 15px 40px;
+	border-radius: 50px;
+	background-image: linear-gradient(to bottom, #e74a35, #f26843);
+	box-shadow: 0 2px 2px rgba(160, 32, 11, 0.64);
+	color: #ffffff;
+	border: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+.site-wrapper {
+	background-image: url(../img/bg1.jpg);
+	background-position: top center;
+	background-color: #849d8f;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.catalog-menu,
+.search-form-block,
+.login-block {
+	display: none;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-navigation a,
+.user-navigation a,
+.header-search-wrapper a,
+.header-basket-wrapper a{
+	color: #ffffff;
+}
+
+.site-navigation a{
+	font-weight: 700;
+}
+
+.site-navigation a:hover {
+	color: #333333;
+	background-color: #ffffff;
+}
+
+.user-navigation a{
+	font-weight: 500;
+}
+
+.header-shedule {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+}
+
+.header-shedule span {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.slider-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slider {
+	margin-bottom: 40px;
+	color: #FFFFFF;
+}
+
+.slider-item {
+	text-align: center;
+}
+
+.slider-item h3 {
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.slider-item a {
+	color: #ffffff;
+}
+
+.slide-button {
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.75);
+}
+
+/* ACTION */
+.action-berry {
+	background-image: url(../img/action-bg1.jpg);
+}
+
+.action-item {
+	padding: 20px;	
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
+.action-item h4 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.action-item p {
+	margin: 0;
+	padding: 0;
+}
+
+.action-item .button-wrapper {
+	text-align: right;
+}
+
+.action-button {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 10px 20px;
+
+
+}
