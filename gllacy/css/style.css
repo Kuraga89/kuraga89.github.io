@@ -739,14 +739,24 @@ a {
 
 /* FEATURES*/
 .features {
-	background-image: url(../img/bg-waf.jpg);
-	background-repeat: repeat;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	border-radius: 15px;
 	padding: 20px;
 	margin-bottom: 40px;
+
+	background-image: url(../img/bg-waf.jpg);
+	background-repeat: repeat;	
+}
+
+.features-left-column,
+.features-right-column {
+	width: 542px;
 }
 
 .features h4 {
+	width: 100%;
 	font-size: 24px;
 	line-height: 30px;
 	margin: 0;
@@ -755,10 +765,34 @@ a {
 
 .features p {
 	margin: 0;
-	padding: 0;
+	padding: 15px 0 15px 60px;
+	background-repeat: no-repeat;
+	background-position: 0 10px;
+}
+
+.features .features-item-1 {
+	background-image: url(../img/icon/features/1.png);
+}
+
+.features .features-item-2 {
+	background-image: url(../img/icon/features/2.png);
+}
+
+.features .features-item-3 {
+	background-image: url(../img/icon/features/3.png);
+}
+
+.features .features-item-4 {
+	background-image: url(../img/icon/features/4.png);
 }
 
 /* NEWS, MAIL*/
+
+.index-column {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
 
 .news, 
 .mail {
@@ -769,7 +803,6 @@ a {
 
 .news {
 	padding: 20px;
-	margin-bottom: 20px;
 
 	background-image: url(../img/news-bg.jpg);
 	background-repeat: no-repeat;
@@ -853,8 +886,9 @@ a {
 /* contacts */
 
 .contacts {
-	margin-top: 40px;
 	position: relative;
+	margin-right: -28px;
+	margin-left: -28px;
 }
 
 .contact-block {
@@ -887,15 +921,68 @@ a {
 
 /* main-footer */
 .main-footer {
+	display: flex;
 	font-size: 13px;
 	line-height: 18px;
 
 	color: #ffffff;
 }
 
+.footer-social {
+	width: 190px;
+	margin-right: 108px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.footer-social-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-button {
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-button:hover {
+	border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-button path{
+	opacity: 0.8;
+}
+
+.social-button:hover path{
+	opacity: 1;
+}
+
+.social-button:focus path,
+.social-button:active path{
+	opacity: 0.7;
+}
+
+.footer-about {
+	width: 310px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
+}
+
 .main-footer a {
 	color: #ffffff;
-	text-decoration: underline;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-info {
+	width: 140px;
+}
+
+.about-docs {
+	width: 170px;
 }
 
 .main-footer ul {
@@ -904,6 +991,15 @@ a {
 	padding: 0;	
 }
 
-.current-about {
+.bold-about {
 		font-weight: 	700;
+		position: relative;
 }
+
+.bold-about::before {
+	position: absolute;
+	content: url('../img/icon/heart.png');
+	top: 2px;
+	left: -20px;
+}
+
