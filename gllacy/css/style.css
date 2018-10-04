@@ -78,6 +78,10 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 }
 
+.inner-page{
+	background-image: none;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -588,6 +592,121 @@ a {
 	background-color: #fff;
 }
 
+/* breadcrumbs */
+
+.breadcrumbs {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: -20px;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #ffffff;
+}
+
+.breadcrumbs li {
+	position: relative;
+	padding-right: 22px;
+}
+
+.breadcrumbs li::after {
+	position: absolute;
+	content: url('../img/icon/arrow.png');
+	width: 6px;
+	height: 6px;
+	top: -1px;
+	right: 8px;
+}
+
+.breadcrumbs li:last-child {
+	padding-right: 0;
+}
+
+.breadcrumbs-current::after {
+	display: none;
+}
+
+.breadcrumbs  a {
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* inner-page */
+
+.page-title {
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding: 0;
+	font-size: 35px;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+/* inner-page filter */
+
+form.filter {
+	display: flex;
+	width: 870px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #FFFFFF;
+}
+
+.catalog-sort {
+	width: 200px;
+}
+
+.catalog-sort p {
+	font-size: 14px;
+	line-height: 16px;
+	padding: 0;
+	margin: 0;
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+
+.sort-select {
+	position: relative;
+	display: inline-block;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 15px;
+
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #ffffff;	
+}
+
+.sort-select::after {
+	position: absolute;
+	content: url('../img/icon/select-down.png');
+	width: 11px;
+	height: 10px;
+	top: 0;
+	right: 0;
+}
+
+.sort-select option {
+	color: #ffffff;
+}
+
+.range-filter {
+	width: 223px;
+}
+
+.fat-filter {
+	width: 416px;
+}
+
+.filter-extend {
+	width: 706px;
+}
+
+.filter-button {
+	width: 146px;
+}
+
 /* ACTION */
 
 .action {
@@ -828,7 +947,13 @@ a {
 	font-weight: 700;
 
 	color: #323232;
-	text-decoration: underline;
+}
+
+.dashed {
+  background-image: linear-gradient(to right, #353535 75%, #353535 75%);
+  background-position: 0 25px;
+  background-repeat: repeat-x;
+  background-size: 8px 2px;
 }
 
 .mail {
@@ -972,9 +1097,13 @@ a {
 	margin-top: 35px;
 }
 
+.footer-about  a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .main-footer a {
 	color: #ffffff;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	
 }
 
 .about-info {
@@ -1001,5 +1130,17 @@ a {
 	content: url('../img/icon/heart.png');
 	top: 2px;
 	left: -20px;
+}
+
+.footer-copiright {
+	width: 190;	
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	margin-top: 15px;
+}
+
+.footer-copiright a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
