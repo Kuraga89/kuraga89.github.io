@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Дизайн-студия Nerds</title>
+</head>
+<body class="inner-page">
+	<header class="main-header">
+		<a href="#" class="main-logo">
+			<img src="img/logo.png" alt="Шаблон магазина шаблонов для сайтов Nerds">
+		</a>
+		<ul class="site-navigation">
+			<li class="site-navigation-item">
+				<a href="#" class="site-navigation-link">Студия</a>
+			</li>
+			<li class="site-navigation-item">
+				<a href="#" class="site-navigation-link">Клиенты</a>
+			</li>
+			<li class="site-navigation-item">
+				<a href="#" class="site-navigation-link">Магазин</a>
+			</li>
+			<li class="site-navigation-item">
+				<a href="#" class="site-navigation-link">Контакты</a>
+			</li>
+		</ul>
+		<ul class="user-navigation">
+			<li class="basket-item">
+				<a href="#" class="basket-link">Корзина</a>
+			</li>
+		</ul>
+	</header>	
+	<main>
+		<h1 class="page-title">Магазин готовых шаблонов</h1>
+		<section class="filter">
+			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form action="#" method="post" class="filter-form">
+				<fieldset class="range-filter">
+					<legend class="visually-hidden">Стоимость</legend>
+					<h4>Стоимость</h4>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>						
+						<div class="toggle min-toggle"></div>
+						<div class="toggle max-toggle"></div>
+					</div>
+					<div class="price-controls">
+						<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+						<label class="max-price">от <input name="max-price" type="text" value="15000"></label>
+					</div>
+				</fieldset>
+				<fieldset class="grid-filter">
+					<legend class="visually-hidden">Сетка:</legend>
+					<h4>СЕТКА:</h4>
+					<ul class="grid-filter-list">
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden filter-input filter-radio" name="value-grid" value="grid-adaptive" id="filter-grid-adaptive" checked>
+							<label for="filter-grid-adaptive">Адаптивная</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden filter-input filter-radio" name="value-grid" value="grid-fix" id="filter-grid-fix">
+							<label for="filter-grid-fix">Фиксированная</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden filter-input filter-radio" name="value-grid" value="grid-fix" id="filter-grid-fix">
+							<label for="filter-grid-responsive">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="features-filter">
+					<legend class="visually-hidden">Особенности:</legend>
+					<h4>Особенности:</h4>
+					<ul class="features-filter-list">
+						<li class="filter-option"> 
+							<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="value-features" value="features-slider" id="filter-features-slider" checked>
+							<label for="filter-features-slider">Слайдер</label>
+						</li>
+						<li class="filter-option"> 
+							<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="value-features" value="features-block" id="filter-features-block">
+							<label for="filter-features-block">Блок преимуществ</label>
+						</li>
+						<li class="filter-option"> 
+							<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="value-features" value="features-news" id="filter-features-news" checked>
+							<label for="filter-features-news">Новости</label>
+						</li>
+						<li class="filter-option"> 
+							<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="value-features" value="features-gallery" id="filter-features-gallery">
+							<label for="filter-features-gallery">Галерея</label>
+						</li>
+						<li class="filter-option"> 
+							<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="value-features" value="features-basket" id="filter-features-basket">
+							<label for="filter-features-basket">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="button filter-button" type="submit">Отправить</button> 	
+			</form>
+		</section>
+		<section class="catalog">
+			<div class="sort-block">
+				<h4>Сортировать:</h4>
+				<ul class="sort-type-list">
+					<li class="sort-type-item sort-current">По цене</li>
+					<li class="sort-type-item">
+						<a href="#">По типу</a>
+					</li>
+					<li class="sort-type-item">
+						<a href="#">По названию</a>
+					</li>
+				</ul>
+				<div class="sort-control">
+					<a href="#" class="arrow arrow-top arrow-current"></a>
+					<a href="#" class="arrow arrow-bottom"></a>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
