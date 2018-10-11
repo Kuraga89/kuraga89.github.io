@@ -2,63 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Дизайн-студия Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
-    <a href="#" class="main-logo">
-      <img src="img/logo.png" alt="Шаблон магазина шаблонов для сайтов Nerds">
-    </a>
-    <ul class="site-navigation">
-      <li class="site-navigation-item">
-        <a href="#" class="site-navigation-link">Студия</a>
-      </li>
-      <li class="site-navigation-item">
-        <a href="#" class="site-navigation-link">Клиенты</a>
-      </li>
-      <li class="site-navigation-item">
-        <a href="#" class="site-navigation-link">Магазин</a>
-      </li>
-      <li class="site-navigation-item">
-        <a href="#" class="site-navigation-link">Контакты</a>
-      </li>
-    </ul>
-    <ul class="user-navigation">
-      <li class="basket-item">
-        <a href="#" class="basket-link">Корзина</a>
-      </li>
-    </ul>
+    <div class=" main-header-wrapper container">
+      <a href="#" class="main-logo">
+        <img src="img/logo.png" widht="160px" height="65" alt="Шаблон магазина шаблонов для сайтов Nerds">
+      </a>
+      <ul class="site-navigation">
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Студия</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Клиенты</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Магазин</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="basket-item">
+          <a href="#" class="basket-link">Корзина</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Магазина шаблонов для сайтов "Nerds"</h1>
-
     <section class="slider">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <div class="slider-controls">
-        <i class="active"></i>
-        <i></i>
-        <i></i>
-      </div>
-      <ul class="slider-list">
-        <li class="slider-item">
-          <h3>Долго, дорого, скурпулезно</h3>
-          <p>Математически выверенный дизайн <br>
-           для вашего сайта или мобильного приложения.</p>
-           <a href="#" class="slider-item-button button">Узнать больше</a>
-         </li>
-         <li class="slider-item">
-           <h3>Любим математику как никто другой</h3>
-           <p>Никакого креатива, только математические формулы<br> 
-            для расчета идеальных пропорций.</p>
-            <a href="#" class="slider-item-button button">Узнать больше</a>
-          </li>
+      <div class="slider-container container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="slider-controls">
+          <i class="active"></i>
+          <i></i>
+          <i></i>
+        </div>
+        <ul class="slider-list">
           <li class="slider-item">
-           <h3>Только ночь, только хардкор</h3>
-           <p>Работать днем, как все? Мы против этого.<br>
-            Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="slider-item-button button">Узнать больше</a>
-          </li>
-        </ul>
+            <h3>Долго, дорого, скурпулезно</h3>
+            <p>Математически выверенный дизайн <br>
+             для вашего сайта или мобильного приложения.</p>
+             <a href="#" class="slider-item-button button">Узнать больше</a>
+           </li>
+           <li class="slider-item">
+             <h3>Любим математику как никто другой</h3>
+             <p>Никакого креатива, только математические формулы<br> 
+              для расчета идеальных пропорций.</p>
+              <a href="#" class="slider-item-button button">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+             <h3>Только ночь, только хардкор</h3>
+             <p>Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.</p>
+              <a href="#" class="slider-item-button button">Узнать больше</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="index-catalog">
@@ -201,3 +207,5 @@
 
   </body>
   </html>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

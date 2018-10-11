@@ -113,7 +113,159 @@
 					<a href="#" class="arrow arrow-bottom"></a>
 				</div>
 			</div>
+			<ul class="catalog-list">
+				<li class="catalog-item">
+					<div class="catalog-item-hover">
+						<h4>Sedona</h4>
+						<p>Информационный сайт для туристов</p>
+						<button class="button catalog-button">9 900 руб.</button>
+					</div>
+					<div class="catalog-item-img">
+						<div class="img-line">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<img src="img/catalog/01.jpg" alt="Sedona - информационный сайт для туристов">
+					</div>					
+				</li>
+				<li class="catalog-item">
+					<div class="catalog-item-hover">
+						<h4>Pink app</h4>
+						<p>Продуктовый лендинг приложения для iOS и Android</p>
+						<button class="button catalog-button">9 900 руб.</button>
+					</div>
+					<div class="catalog-item-img">
+						<div class="img-line">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<img src="img/catalog/02.jpg" alt="Pink app - продуктовый лендинг приложения для iOS и Android">
+					</div>					
+				</li>
+				<li class="catalog-item">
+					<div class="catalog-item-hover">
+						<h4>barbershop</h4>
+						<p>Сайт салоны красоты. Для мужчин, да.</p>
+						<button class="button catalog-button">9 900 руб.</button>
+					</div>
+					<div class="catalog-item-img">
+						<div class="img-line">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<img src="img/catalog/03.jpg" alt="Barbershop- cайт салоны красоты. Для мужчин, да.">
+					</div>					
+				</li>
+				<li class="catalog-item">
+					<div class="catalog-item-hover">
+						<h4>MISHKA</h4>
+						<p>Интернет-магазин вязаных игрушек</p>
+						<button class="button catalog-button">9 900 руб.</button>
+					</div>
+					<div class="catalog-item-img">
+						<div class="img-line">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<img src="img/catalog/04.jpg" alt="MISHKA - Интернет-магазин вязаных игрушек">
+					</div>					
+				</li>
+				<li class="catalog-item">
+					<div class="catalog-item-hover">
+						<h4>A Plus</h4>
+						<p>Лендинг курсов повышения квалификации</p>
+						<button class="button catalog-button">9 900 руб.</button>
+					</div>
+					<div class="catalog-item-img">
+						<div class="img-line">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<img src="img/catalog/05.jpg" alt="A Plus - Лендинг курсов повышения квалификации">
+					</div>					
+				</li>
+				<li class="catalog-item">
+					<div class="catalog-item-hover">
+						<h4>КВАСТ</h4>
+						<p>Промо-сайт производителя крафтового кваса</p>
+						<button class="button catalog-button">9 900 руб.</button>
+					</div>
+					<div class="catalog-item-img">
+						<div class="img-line">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<img src="img/catalog/05.jpg" alt="КВАСТ - Промо-сайт производителя крафтового кваса">
+					</div>					
+				</li>
+			</ul>
+			<div class="pagination">
+				<ul class="pagination-list">
+					<li class="pagination-item pagination-current">1</li>
+					<li class="pagination-item"><a href="">2</a></li>
+					<li class="pagination-item"><a href="">3</a></li>
+				</ul>
+				<button class="button pagination-button">Следующая</button>
+			</div>
+		</section>
+		<section class="contacts">
+			<h2 class="visually-hidden">Контакты</h2>
+			<img src="#" alt="Дизайн-студия Nerds находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="map">
+			<div class="contact-block">
+				<h4>NЁRDS DESIGN STUDIO</h4>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<button class="button">Напишите нам</button>
+			</div>
 		</section>
 	</main>
+
+	<footer class="main-footer">
+		<section class="footer-social">
+			<ul class="social-button-list">
+				<li class="social-button-item">
+					<span class="visually-hidden">Вконтакте</span>
+				</li>
+				<li class="social-button-item">
+					<span class="visually-hidden">Фейсбук</span>
+				</li>
+				<li class="social-button-item">
+					<span class="visually-hidden">Инстаграм</span>
+				</li>
+			</ul>
+		</section>
+		<p class="footer-text">
+			<b>Давайте дружить, это выгодно!</b>
+			<span>Скидка 10% для друзей из социальных сетей.</span>
+		</p>
+	</footer>
+
+	<section class="modal modal-write">
+		<h3>Напишите нам</h3>
+		<form class="write-form" action="#" method="post">
+			<p class="write-item write-input">
+				<label for="write-name">Ваше имя</label>
+				<input id="write-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+			</p>
+			<p class="write-item write-input">
+				<label for="write-email">Ваш e-mail:</label>
+				<input id="write-email" type="text" name="email" value="" placeholder="email@example.com">
+			</p>
+			<p class="write-item write-textarea">
+				<label for="write-text">Текст письма</label>
+				<textarea id="write-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			</p>
+			<div class="button-wrapper">
+				<button class="button button-write" type="submit">Отправить</button>
+			</div>
+		</form>
+		<button class="modal-close">x</button>
+	</section>
 </body>
 </html>
