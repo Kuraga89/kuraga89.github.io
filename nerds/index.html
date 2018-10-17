@@ -39,26 +39,29 @@
     <section class="slider">
       <div class="slider-container container">
         <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <label for="product-1"></label>
+          <label for="product-2"></label>
+          <label for="product-3"></label>
         </div>
         <ul class="slider-list">
-          <li class="slider-item">
-              <h3>Долго, дорого, скурпулезно</h3>
-              <p>Математически выверенный дизайн <br>
-               для вашего сайта или мобильного приложения.</p>
-               <a href="#" class="slider-item-button button">Узнать больше</a>
+          <li class="slider-item" id="slide-1">
+            <h3>Долго, дорого, скурпулезно</h3>
+            <p>Математически выверенный дизайн <br>
+             для вашего сайта или мобильного приложения.</p>
+             <a href="#" class="slider-item-button button">Узнать больше</a>
            </li>
-           <li class="slider-item">
+           <li class="slider-item" id="slide-2">
              <h3>Любим математику как никто другой</h3>
              <p>Никакого креатива, только математические формулы<br> 
               для расчета идеальных пропорций.</p>
               <a href="#" class="slider-item-button button">Узнать больше</a>
             </li>
-            <li class="slider-item">
-             <h3>Только ночь, только хардкор</h3>
+            <li class="slider-item" id="slide-3">
+             <h3>Только ночь,<br> только хардкор</h3>
              <p>Работать днем, как все? Мы против этого.<br>
               Ближе к полуночи работа только начинается.</p>
               <a href="#" class="slider-item-button button">Узнать больше</a>
@@ -67,89 +70,91 @@
         </div>
       </section>
 
-      <section class="index-catalog">
-        <h2 class="visually-hidden">Каталог предоставляемых услуг</h2>
-        <ul class="index-catalog-list">
-          <li class="index-catalog-item">
-            <h4>Веб-сайты</h4>
-            <img src="#" alt="" class="index-catalog-img" alt="Компания nerds разрабатывает сайты">
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button class="button index-catalog-button red-button">Заказать</button>
-          </li>
-          <li class="index-catalog-item">
-            <h4>Приложения</h4>
-            <img src="#" alt="" class="index-catalog-img" alt="Компания nerds разрабатывает приложения">
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button class="button index-catalog-button green-button">Заказать</button>
-          </li>
-          <li class="index-catalog-item">
-            <h4>Презентации</h4>
-            <img src="#" alt="" class="index-catalog-img" alt="Компания nerds разрабатывает презентации">
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="button index-catalog-button yellow-button">Заказать</button>
-          </li>
-        </ul>
-      </section>
-
-      <div class="index-columns">
-        <section class="features">
-          <h2 class="visually-hidden">Описание</h2>
-          <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h3>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h4>Выполняем заказы на разработку:</h4>
-          <ul class="features-catalog-list">
-            <li class="features-catalog-item">Веб-сайтов любой сложности</li>
-            <li class="features-catalog-item">Мобильных приложений для iOS и Android</li>
-            <li class="features-catalog-item">Слайдшоу и видео для корпоративных презентаций</li>
+      <div class="container">
+        <section class="index-catalog">
+          <h2 class="visually-hidden">Каталог предоставляемых услуг</h2>
+          <ul class="index-catalog-list">
+            <li class="index-catalog-item">
+              <h4>Веб-сайты</h4>
+              <img src="img/index-catalog/illustration-1.jpg" width="300" height="146" class="index-catalog-img" alt="Компания nerds разрабатывает сайты">
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="button index-catalog-button red-button">Заказать</button>
+            </li>
+            <li class="index-catalog-item">
+              <h4>Приложения</h4>
+              <img src="img/index-catalog/illustration-2.jpg" width="300" height="146" class="index-catalog-img" alt="Компания nerds разрабатывает приложения">
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <button class="button index-catalog-button green-button">Заказать</button>
+            </li>
+            <li class="index-catalog-item">
+              <h4>Презентации</h4>
+              <img src="img/index-catalog/illustration-3.jpg" width="300" height="146" class="index-catalog-img" alt="Компания nerds разрабатывает презентации">
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <button class="button index-catalog-button yellow-button">Заказать</button>
+            </li>
           </ul>
         </section>
 
-        <section class="figures">
-          <h2 class="visually-hidden">Компания в цифрах</h2>
-          <img src="#" alt="" class="figures-img">
-          <p>с 2004 года Любим точность во всем:</p>
-          <ul class="figures-list">
-            <li class="fugures-item">
-              <b>146%</b>
-              <p>Уровень самоотдачи</p>
+        <div class="index-columns">
+          <section class="features">
+            <h2 class="visually-hidden">Описание</h2>
+            <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h3>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h4>Выполняем заказы на разработку:</h4>
+            <ul class="features-catalog-list">
+              <li class="features-catalog-item">Веб-сайтов любой сложности</li>
+              <li class="features-catalog-item">Мобильных приложений для iOS и Android</li>
+              <li class="features-catalog-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </section>
+
+          <section class="figures">
+            <h2 class="visually-hidden">Компания в цифрах</h2>
+            <img src="#" alt="" class="figures-img">
+            <p>с 2004 года Любим точность во всем:</p>
+            <ul class="figures-list">
+              <li class="fugures-item">
+                <b>146%</b>
+                <p>Уровень самоотдачи</p>
+              </li>
+              <li class="fugures-item">
+                <b>100%</b>
+                <p>Соблюдение сроков</p>
+              </li>
+              <li class="fugures-item">
+                <b>50%</b>
+                <p>Минимальная предоплата</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="sites">
+          <h2 class="visually-hidden">Наши работы</h2>
+          <ul class="sites-list">
+            <li class="sites-item">
+              <a href="#" class="sites-link">
+                <img src="#" alt="Сайт htmlacademy">
+              </a>
             </li>
-            <li class="fugures-item">
-              <b>100%</b>
-              <p>Соблюдение сроков</p>
+            <li class="sites-item">
+              <a href="#" class="sites-link">
+                <img src="#" alt="Сайт барбершоп borodinski">
+              </a>
             </li>
-            <li class="fugures-item">
-              <b>50%</b>
-              <p>Минимальная предоплата</p>
+            <li class="sites-item">
+              <a href="#" class="sites-link">
+                <img src="#" alt="Сайт pink">
+              </a>
+            </li>
+            <li class="sites-item">
+              <a href="#" class="sites-link">
+                <img src="#" alt="Сайт mishka">
+              </a>
             </li>
           </ul>
         </section>
       </div>
-
-      <section class="sites">
-        <h2 class="visually-hidden">Наши работы</h2>
-        <ul class="sites-list">
-          <li class="sites-item">
-            <a href="#" class="sites-link">
-              <img src="#" alt="Сайт htmlacademy">
-            </a>
-          </li>
-          <li class="sites-item">
-            <a href="#" class="sites-link">
-              <img src="#" alt="Сайт барбершоп borodinski">
-            </a>
-          </li>
-          <li class="sites-item">
-            <a href="#" class="sites-link">
-              <img src="#" alt="Сайт pink">
-            </a>
-          </li>
-          <li class="sites-item">
-            <a href="#" class="sites-link">
-              <img src="#" alt="Сайт mishka">
-            </a>
-          </li>
-        </ul>
-      </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
