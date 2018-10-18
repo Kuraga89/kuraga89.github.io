@@ -270,13 +270,13 @@ a {
 }
 
 .index-catalog-item {
-	width: 360px;
+	width: 300px;
 	display: flex;
 	flex-direction: column;
 }
 
 .index-catalog-item h4 {
-	margin: 25px 0;
+	margin: 25px 0 15px 0;
 	padding: 0;
 	margin-top: 25px;
 	font-size: 24px;
@@ -291,5 +291,135 @@ a {
 
 .index-catalog-item p {
 	margin: 0;
+	margin-bottom: 30px;
 	padding: 0;
+	max-width: 260px;
 }
+
+.index-catalog-button {
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 160px;
+}
+
+.green-button {
+	background-color: #00ca74;
+}
+
+.yellow-button {
+	background-color: #efc84a;
+}
+
+/*features*/
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid #eeeeee;
+	margin-bottom: 75px;
+}
+
+.features {
+	width: 680px;
+}
+
+.features h3 {
+	margin: 0;
+	padding: 0;
+	margin-top: 75px;
+	margin-bottom: 30px;
+
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.features h4 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 28px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.features p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 45px;
+}
+
+.features-catalog-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.features-catalog-item {
+	position: relative;
+	padding-left: 37px;
+	padding-bottom: 25px;
+}
+
+.features-catalog-item::before {
+	content: '';
+	position: absolute;
+	width: 26px;
+	height: 2px;
+	top: 10px;
+	left: 0;
+
+	background-color: #fb565a;
+}
+
+.figures {
+	width: 360px;
+	padding-top: 260px;
+
+	background-image: url(../img/figures.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 40px;
+}
+
+.figures-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 45px;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.figures-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fugures-item {
+	width: 110px;
+}
+
+.fugures-item span {
+	vertical-align: super;
+	font-size: 28px;
+}
+
+.fugures-item b {
+	font-size: 45px;
+	font-weight: 700px;
+	line-height: 10px;
+}
+
+.fugures-item p {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/*sites*/
+
