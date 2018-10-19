@@ -422,4 +422,30 @@ a {
 }
 
 /*sites*/
+.sites {
+	margin-bottom: 80px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	
+}
 
+.sites-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sites-item {
+	opacity: 0.2;
+}
+
+.sites-item:hover,
+.sites-item:focus{
+	opacity: 1;
+}
+
+.sites-item:active {
+	opacity: 0.1;
+}
