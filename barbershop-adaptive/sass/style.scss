@@ -1,3 +1,9 @@
-body {
-  background: red;
-}
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "outlines.scss";
+
+/* blocks */
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/stat.scss";
