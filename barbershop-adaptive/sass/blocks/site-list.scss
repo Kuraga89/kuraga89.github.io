@@ -1,0 +1,38 @@
+.site-list {
+	font-weight: bold;
+}
+
+.site-list a {
+	display: block;
+	padding: 12px 21px;
+
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+
+	border-bottom: 1px solid #71543f;
+	border-top: 1px solid #886e5b;
+}
+
+.site-list a[href] {
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+
+		border-top-color: #6a4d38;
+		background-color: #6a4d38;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.site-list {
+    width: 570px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+	.site-list {
+    width: 780px;
+  }
+}

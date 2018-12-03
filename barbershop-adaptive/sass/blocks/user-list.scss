@@ -1,0 +1,36 @@
+.user-list__login {
+	position: relative;
+	display: block;
+	padding: 12px 21px;
+	padding-left: 50px;
+
+	color: #ffffff;
+	text-decoration: none;
+
+	background-color: #6a4d38;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 18px;
+		left: 21px;
+
+		width: 16px;
+		height: 16px;
+
+		background-image: url(../img/login1.svg);
+
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.user-list {
+    width: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+	.user-list {
+    width: 160px;
+  }
+}
