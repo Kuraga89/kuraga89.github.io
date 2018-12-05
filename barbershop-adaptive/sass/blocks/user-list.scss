@@ -18,7 +18,7 @@
 		width: 16px;
 		height: 16px;
 
-		background-image: url(../img/login1.svg);
+		background-image: url("../img/login1.svg");
 
 	}
 }
@@ -27,10 +27,49 @@
 	.user-list {
     width: 60px;
   }
+
+  .user-list__login {
+    font-size: 0;
+
+    background-color: #000000;
+
+    &::before {
+      top: 29px;
+    }
+
+    &:hover::before {
+      background-image: url("../img/login-hover.svg");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
 	.user-list {
-    width: 160px;
+    width: auto;
+    max-width: 160px;
+  }
+
+  .user-list__login {
+  padding: 21px 30px 21px 50px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      color: #000;
+
+      background-color: #fff;
+
+      &::before {
+        background-image: url("../img/login-desktop-hover.png");
+      }
+    }
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      &::before {
+        opacity: 0.1;
+      }
+    }
   }
 }

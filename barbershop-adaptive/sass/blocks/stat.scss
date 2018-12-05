@@ -8,16 +8,106 @@
   padding-right: 40px;
   padding-bottom: 25px;
   padding-left: 40px;
+
+  color: #000000;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.stat-slogan {
+  padding: 0 10px;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stat-intro {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.stat-legend--top {
+  display: none;
+}
+
+.stat-legend--bottom {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 20px;
+  line-height: 20px;
+  opacity: 0.3;
+  text-align: center;
 }
 
 .stat__list {
   width: 100%;
+
+  border-collapse: collapse;
+}
+
+.stat__list tr{
+  color: #fffffff;
+  background-color: #404040;
+
+  &:nth-child(2){
+    background-color: #4e4e4e;
+  }
+
+  &:nth-child(3) {
+    background-color: #353535;
+  }
+
+  &:nth-child(4) {
+    background-color: #404040;
+  }
+}
+
+.stat__value,
+.stat__field {
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 19px;
+
+  vertical-align: top;
+}
+
+.stat__value {
+  padding-right: 0;
+
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.stat__value sup {
+  top: -0.35em;
+
+  margin-left: 5px;
+}
+
+.stat__field {
+  font-size: 18px;
+  line-height: 18px;
+
+  text-align: right;
 }
 
 @media (min-width: $tablet-width) {
   .stat {
     width: 640px;
     margin-top: -185px;
+  }
+
+  .stat__header {
+    display: flex;
   }
 }
 
