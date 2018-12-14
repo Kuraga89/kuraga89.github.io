@@ -11,7 +11,7 @@
   font-family: 'PT Sans Narrow';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/pt-sans-narrow-v9-latin_cyrillic-700.woff2') format('woff2'), 
+  src: url('../fonts/pt-sans-narrow-v9-latin_cyrillic-700.woff2') format('woff2'),
        url('../fonts/pt-sans-narrow-v9-latin_cyrillic-700.woff') format('woff');
 }
 
@@ -64,5 +64,21 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  display: block;
+  padding: 12px 0;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 1px solid #e5ddd5;
+
 }
 
