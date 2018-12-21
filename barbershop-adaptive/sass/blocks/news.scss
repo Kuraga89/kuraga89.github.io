@@ -2,9 +2,10 @@
   color: #000000;
 
   background-color: #ffffff;
-  background-image: url("../img/bg-arrow.svg");
+  background-image: url("../img/111.png");
   background-position: top center;
   background-repeat: no-repeat;
+  border-bottom: 1px solid #e5ddd5;
 }
 
 .news__wrapper {
@@ -13,6 +14,7 @@
   padding: 0 20px;
   padding-top: 34px;
   padding-bottom: 30px;
+  box-sizing: content-box;
 }
 
 .news__list {
@@ -33,19 +35,51 @@
 }
 
 .news__item {
-  display: flex;
-  justify-content: space-between;
-
   padding-bottom: 20px;
   padding-top: 20px;
 
   border-bottom: 1px solid #e5ddd5;
 
+  &:nth-child(3){
+    display: none;
+  }
+
+  &:nth-child(2){
+    border: none;
+  }
+
   &:first-child {
     padding-top: 0;
   }
-  &:last-child {
-    border: none;
+}
+
+.news__link {
+  display: flex;
+  justify-content: space-between;
+
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    .news__text{
+      color: #826550;
+    }
+
+    .news__date {
+      background-image: url("../img/news-bg-hover.svg");
+    }
+  }
+
+  &:active {
+    .news__text{
+      color: #6a4d38;
+    }
+
+    .news__date {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-image: url("../img/news-bg-down.svg");
+    }
   }
 }
 
@@ -61,7 +95,6 @@
 
   background-image: url("../img/news-bg.svg");
   background-repeat: no-repeat;
-
 }
 
 .news__day {
@@ -76,15 +109,73 @@
   width: 210px;
 }
 
+.news__to-all {
+  &:active{
+    background-color: #d5c9bd;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .news {
   }
+
   .news__wrapper {
+    position: relative;
     width: 640px;
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #e5ddd5;
   }
 
   .news__title {
+    margin-bottom: 50px;
+
     font-size: 40px;
     text-align: left;
+  }
+
+  .news__list {
+    display: flex;
+  }
+
+  .news__item {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  .news__date {
+    padding-right: 20px;
+  }
+
+  .news__text {
+    width: 210px;
+    padding-right: 40px;
+  }
+
+  .news__to-all {
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    padding: 12px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news__wrapper {
+    width: 960px;
+  }
+
+  .news__title {
+    padding-left: 70px;
+  }
+
+  .news__item {
+    &:nth-child(3){
+      display: block;
+    }
   }
 }

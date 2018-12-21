@@ -1,6 +1,15 @@
 .advantages {
+  background-image: url("../img/bg-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% 70px;
+}
+
+.advantages__wrapper {
+
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .advantages__list {
@@ -56,18 +65,18 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .slider {
+  .advantages-slider {
     position: relative;
   }
 
-  .slider__item {
+  .advantages-slider__item {
     display: none;
   }
 
 
-  .slider__toggles {
+  .advantages-slider__toggles {
     position: absolute;
-    bottom: 12px;
+    bottom: 45px;
     left: 50%;
     display: flex;
     justify-content: space-between;
@@ -94,22 +103,22 @@
 
   }
 
-  #product-1:checked ~ .slider__list #slide-1,
-  #product-2:checked ~ .slider__list #slide-2,
-  #product-3:checked ~ .slider__list #slide-3 {
+  #product-1:checked ~ .advantages-slider__list #slide-1,
+  #product-2:checked ~ .advantages-slider__list #slide-2,
+  #product-3:checked ~ .advantages-slider__list #slide-3 {
     display: block;
   }
 
-  #product-1:checked ~ .slider__toggles label[for="product-1"],
-  #product-2:checked ~ .slider__toggles label[for="product-2"],
-  #product-3:checked ~ .slider__toggles label[for="product-3"] {
+  #product-1:checked ~ .advantages-slider__toggles label[for="product-1"],
+  #product-2:checked ~ .advantages-slider__toggles label[for="product-2"],
+  #product-3:checked ~ .advantages-slider__toggles label[for="product-3"] {
     background-color: #fff;
     border: none;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
+  .advantages__wrapper {
     width: 640px;
 
 
@@ -136,7 +145,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages {
+  .advantages__wrapper {
     width: 960px;
   }
 
