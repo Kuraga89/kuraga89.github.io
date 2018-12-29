@@ -11,15 +11,13 @@
 .news__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
   padding-top: 34px;
   padding-bottom: 30px;
-  box-sizing: content-box;
 }
 
 .news__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
 }
 
@@ -110,6 +108,7 @@
 }
 
 .news__to-all {
+  margin: 0 20px;
   &:active{
     background-color: #d5c9bd;
   }
@@ -124,7 +123,7 @@
     width: 640px;
     padding-bottom: 30px;
 
-    border-bottom: 1px solid #e5ddd5;
+    box-sizing: border-box;
   }
 
   .news__title {
@@ -135,6 +134,7 @@
   }
 
   .news__list {
+    padding: 0;
     display: flex;
   }
 
@@ -161,6 +161,7 @@
     right: 0;
 
     padding: 12px 30px;
+    margin: 0;
   }
 }
 
