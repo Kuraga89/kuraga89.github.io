@@ -1,0 +1,25 @@
+@media(max-width: $mobile-width-only) {
+  .effect {
+    display: none;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .effect {
+    width: 620px;
+    margin: 0 auto;
+  }
+  .effect__text {
+    margin-left: 310px;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .effect {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .effect__text {
+    margin-left: 370px;
+  }
+}

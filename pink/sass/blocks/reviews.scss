@@ -1,0 +1,16 @@
+.reviews {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media(min-width: $tablet-width) {
+  .reviews {
+    width: 640px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .reviews {
+    width: 920px;
+  }
+}

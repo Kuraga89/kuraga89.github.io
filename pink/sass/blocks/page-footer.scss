@@ -1,0 +1,26 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: $mobile-width-only) {
+  .page-footer {
+    display: none;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .page-footer__logo {
+    width: 150px;
+  }
+  .social-list {
+    width: 180px;
+  }
+  .page-footer__copyright {
+    width: 150px;
+  }
+}
+
+@media(max-width: $desktop-width) {
+
+}

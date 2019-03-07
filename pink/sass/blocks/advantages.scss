@@ -1,0 +1,36 @@
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width: $tablet-width) {
+  .advantages {
+    width: 620px;
+  }
+
+  .advantages__list {
+    margin-left: 310px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .advantages {
+    width: 940px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .advantages__item {
+    width: 260px;
+  }
+}
+

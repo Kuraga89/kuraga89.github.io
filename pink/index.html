@@ -2,51 +2,57 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приложение «Pink»</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img  class="page-header__logo-image"  src="img/logo.svg" width="147" height="40" alt="Приложение «Pink»" >
-    </a>
     <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a>Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="photos.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#">HTML Academy</a>
-        </li>
-      </ul>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo">
+          <img  class="main-nav__logo-image"  src="img/logo.svg" width="147" height="40" alt="Приложение «Pink»" >
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photos.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-  </header>
 
-  <main class="page-main">
-    <h1 class="visually-hidden">Приложение «Pink» - взгляните на жизнь иначе</h1>
     <section class="application">
       <h2 class="visually-hidden">Скачайте приложение «Pink»</h2>
       <p class="application__slogan">Взгляните на жизнь иначе!</p>
       <a href="#" class="application__button-download">Скачать приложение</a>
       <ul class="application__list">
-       <li class="application__item application__item--apple">
-         <a href="#"></a>
+       <li class="application__item">
+         <a class="application__link--iphone" href="#">Приложение для iphone</a>
        </li>
-       <li class="application__item application__item--android">
-         <a href="#"></a>
+       <li class="application__item">
+         <a class="application__link--android" href="#">Приложение для Android</a>
        </li>
-       <li class="application__item application__item--windows">
-         <a href="#"></a>
+       <li class="application__item">
+         <a class=" application__link--windows" href="#">Приложение для Windows</a>
        </li>
      </ul>
      <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
    </section>
 
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Приложение «Pink»</h1>
    <section class="advantages">
      <h2 class="visually-hidden">Приемущества приложения «Pink»</h2>
      <p class="advantages__slogan">
@@ -70,7 +76,7 @@
   </section>
 
   <div class="effect">
-  <h3 class="effect__title">Эффект на 24 часа!</h3>
+    <h3 class="effect__title">Эффект на 24 часа!</h3>
     <p class="effect__text">Британские ученые провели исследования и доказали,
       что положительный эффект от использования приложения длится целые сутки!</p>
       <a href="#" class="effect__link">Узнать больше об исследовании</a>
@@ -172,30 +178,31 @@
           <img src="img/map.jpg" alt="Мы на карте" class="contacts__map-image" width="1200" height="500">
         </div>
       </section>
-
-      <footer class="page-footer">
-        <a class="page-footer__logo" href="#" >
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="147" height="40" alt="Приложение «Pink»">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social-list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы в ютубе</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="#">HTML Academy</a>
-        </div>
-      </footer>
-
     </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#" >
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="147" height="40" alt="Приложение «Pink»">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social-list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы в ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
+
+
   </body>
   </html>
