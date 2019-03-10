@@ -1,6 +1,8 @@
 .page-header {
   min-height: 462px;
   position: relative;
+  background: #283645 url('../img/back.jpg') no-repeat center bottom;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
