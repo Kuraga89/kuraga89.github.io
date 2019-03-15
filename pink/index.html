@@ -8,201 +8,207 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav main-nav__closed">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <a class="main-nav__logo">
-          <img  class="main-nav__logo-image"  src="img/logo.svg" width="75" height="22" alt="Приложение «Pink»" >
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__container">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <a class="main-nav__logo">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" alt="Приложение «Pink»" >
+                </picture>
+              </a>
+              <ul class="main-nav__list site-list">
+                <li class="main-nav__item site-list__item site-list__item--active">
+                  <a>Главная</a>
+                </li>
+                <li class="main-nav__item site-list__item">
+                  <a href="photos.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item site-list__item">
+                  <a href="#">Конкурс</a>
+                </li>
+                <li class="main-nav__item site-list__item">
+                  <a href="#">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <section class="application">
+          <h2 class="visually-hidden">Скачайте приложение «Pink»</h2>
+          <p class="application__slogan">Взгляните <br>на жизнь <br>иначе!</p>
+          <a href="#" class="application__button-download">Скачать приложение</a>
+          <ul class="application__list">
+           <li class="application__item application__item--iphone">
+             <a href="#">Приложение для iphone</a>
+           </li>
+           <li class="application__item application__item--android">
+             <a href="#">Приложение для Android</a>
+           </li>
+           <li class="application__item application__item--windows">
+             <a href="#">Приложение для Windows</a>
+           </li>
+         </ul>
+         <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+       </section>
+
+     </header>
+
+     <main class="page-main">
+      <h1 class="visually-hidden">Приложение «Pink»</h1>
+      <section class="advantages">
+       <h2 class="visually-hidden">Приемущества приложения «Pink»</h2>
+       <p class="advantages__slogan">
+         <span>Устали от серости мегаполиса?</span>
+         <span>Нам есть, что вам предложить!</span>
+       </p>
+       <ul class="advantages__list">
+        <li class="advantages__item advantages__item--mood">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item  advantages__item--change">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages_item  advantages__item--friends">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="effect">
+      <h3 class="effect__title">Эффект на 24 часа!</h3>
+      <p class="effect__text">Британские ученые провели исследования и доказали,
+        что положительный эффект от использования приложения длится целые сутки!</p>
+        <a href="#" class="effect__link">Узнать больше об исследовании</a>
+      </div>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__author-description">25 лет, водитель трамвая</p>
+            </blockquote>
+            <div class="reviews__list">
+              <blockquote class="reviews__item slider__item">
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-description">25 лет, водитель трамвая</p>
+              </blockquote>
+              <blockquote class="reviews__item slider__item">
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-description">25 лет, водитель трамвая</p>
+              </blockquote>
+              <button class="reviws__prev" type="button">Предыдущий отзыв</button>
+              <button class="reviws__next" type="button">Следующий отзыв</button>
+            </div>
+            <p class="reviws__toggles slider__toggles">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
+        </section>
+
+        <section class="plans">
+          <h2 class="visually-hidden">Тарифные планы</h2>
+          <table class="plans__list">
+            <tr>
+              <td class="empty">
+              </td>
+              <td class="plans__header">
+                <b class="plans__name">база</b>
+                <span class="plans__price">1,99 usd</span>
+              </td>
+              <td class="plans__header plans__header--hit">
+                <b class="plans__name">стандарт</b>
+                <span class="plans__price">3,99 usd</span>
+              </td>
+              <td class="plans__header">
+                <b class="plans__name">анлим</b>
+                <span class="plans__price">9,99 usd</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="filter__name">розовый фильтр</td>
+              <td class="filter__existance filter__existance--on"></td>
+              <td class="filter__existance filter__existance--on"></td>
+              <td class="filter__existance filter__existance--on"></td>
+            </tr>
+            <tr>
+              <td class="filter__name">смайлики</td>
+              <td class="filter__existance filter__existance--off"></td>
+              <td class="filter__existance filter__existance--on"></td>
+              <td class="filter__existance filter__existance--on"></td>
+            </tr>
+            <tr>
+              <td class="filter__name">комментарии</td>
+              <td class="filter__existance filter__existance--off"></td>
+              <td class="filter__existance filter__existance--off"></td>
+              <td class="filter__existance filter__existance--on"></td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__wrapper">
+            <div class="contacts__item">
+              <p class="contants__title">Звоните:</p>
+              <p class="contacts__text">
+                <a class="contacts__link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+              </p>
+            </div>
+            <div class="contacts__item">
+              <p class="contants__title">Приезжайте в гости:</p>
+              <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+            </div>
+            <div class="contacts__item">
+              <p class="contants__title">Пишите:</p>
+              <p class="contacts__text">
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <img src="img/map.jpg" alt="Мы на карте" class="contacts__map-image" width="1200" height="500">
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <a class="page-footer__logo" href="#" >
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="147" height="40" alt="Приложение «Pink»">
         </a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photos.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <section class="application">
-      <h2 class="visually-hidden">Скачайте приложение «Pink»</h2>
-      <p class="application__slogan">Взгляните на жизнь иначе!</p>
-      <a href="#" class="application__button-download">Скачать приложение</a>
-      <ul class="application__list">
-       <li class="application__item">
-         <a class="application__link--iphone" href="#">Приложение для iphone</a>
-       </li>
-       <li class="application__item">
-         <a class="application__link--android" href="#">Приложение для Android</a>
-       </li>
-       <li class="application__item">
-         <a class=" application__link--windows" href="#">Приложение для Windows</a>
-       </li>
-     </ul>
-     <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-   </section>
-
-  </header>
-
-  <main class="page-main">
-    <h1 class="visually-hidden">Приложение «Pink»</h1>
-   <section class="advantages">
-     <h2 class="visually-hidden">Приемущества приложения «Pink»</h2>
-     <p class="advantages__slogan">
-       <span>Устали от серости мегаполиса?</span>
-       <span>Нам есть, что вам предложить!</span>
-     </p>
-     <ul class="advantages__list">
-      <li class="advantages__item advantages__item--mood">
-        <h3 class="advantages__text">Поднимает настроение</h3>
-        <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      </li>
-      <li class="advantages__item  advantages__item--change">
-        <h3 class="advantages__title">Меняет мир вокруг</h3>
-        <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </li>
-      <li class="advantages_item  advantages__item--friends">
-        <h3 class="advantages__title">Заводит новых друзей</h3>
-        <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </li>
-    </ul>
-  </section>
-
-  <div class="effect">
-    <h3 class="effect__title">Эффект на 24 часа!</h3>
-    <p class="effect__text">Британские ученые провели исследования и доказали,
-      что положительный эффект от использования приложения длится целые сутки!</p>
-      <a href="#" class="effect__link">Узнать больше об исследовании</a>
-    </div>
-
-    <section class="reviews">
-      <h2 class="visually-hidden">Отзывы о нас</h2>
-      <div class="reviews__wrapper slider">
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__author-description">25 лет, водитель трамвая</p>
-          </blockquote>
-          <div class="reviews__list">
-            <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-description">25 лет, водитель трамвая</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-description">25 лет, водитель трамвая</p>
-            </blockquote>
-            <button class="reviws__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviws__next" type="button">Следующий отзыв</button>
-          </div>
-          <p class="reviws__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+        <div class="page-footer__social social">
+          <ul class="social-list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы в ютубе</a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <section class="plans">
-        <h2 class="visually-hidden">Тарифные планы</h2>
-        <table class="plans__list">
-          <tr>
-            <td class="empty">
-            </td>
-            <td class="plans__header">
-              <b class="plans__name">база</b>
-              <span class="plans__price">1,99 usd</span>
-            </td>
-            <td class="plans__header plans__header--hit">
-              <b class="plans__name">стандарт</b>
-              <span class="plans__price">3,99 usd</span>
-            </td>
-            <td class="plans__header">
-              <b class="plans__name">анлим</b>
-              <span class="plans__price">9,99 usd</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="filter__name">розовый фильтр</td>
-            <td class="filter__existance filter__existance--on"></td>
-            <td class="filter__existance filter__existance--on"></td>
-            <td class="filter__existance filter__existance--on"></td>
-          </tr>
-          <tr>
-            <td class="filter__name">смайлики</td>
-            <td class="filter__existance filter__existance--off"></td>
-            <td class="filter__existance filter__existance--on"></td>
-            <td class="filter__existance filter__existance--on"></td>
-          </tr>
-          <tr>
-            <td class="filter__name">комментарии</td>
-            <td class="filter__existance filter__existance--off"></td>
-            <td class="filter__existance filter__existance--off"></td>
-            <td class="filter__existance filter__existance--on"></td>
-          </tr>
-        </table>
-      </section>
-
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts__wrapper">
-          <div class="contacts__item">
-            <p class="contants__title">Звоните:</p>
-            <p class="contacts__text">
-              <a class="contacts__link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-            </p>
-          </div>
-          <div class="contacts__item">
-            <p class="contants__title">Приезжайте в гости:</p>
-            <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
-          </div>
-          <div class="contacts__item">
-            <p class="contants__title">Пишите:</p>
-            <p class="contacts__text">
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-          </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="#">HTML Academy</a>
         </div>
-        <div class="contacts__map">
-          <img src="img/map.jpg" alt="Мы на карте" class="contacts__map-image" width="1200" height="500">
-        </div>
-      </section>
-    </main>
+      </footer>
 
-    <footer class="page-footer">
-      <a class="page-footer__logo" href="#" >
-        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="147" height="40" alt="Приложение «Pink»">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social-list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в ютубе</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="#">HTML Academy</a>
-      </div>
-    </footer>
-
-
-  </body>
-  </html>
+      <script src="js/script.js"></script>
+    </body>
+    </html>

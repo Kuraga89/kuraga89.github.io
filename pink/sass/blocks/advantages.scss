@@ -3,10 +3,44 @@
   margin: 0 auto;
 }
 
+.advantages__slogan  {
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.advantages__slogan span {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .advantages__list {
   list-style: none;
   margin: 0;
+  padding: 50px 20px 0 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.advantages__text {
+  margin: 0;
   padding: 0;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 23px;
 }
 
 @media(min-width: $tablet-width) {

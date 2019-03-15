@@ -1,6 +1,61 @@
 .application {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 30px 20px;
+  padding-bottom: 15px;
+  background-color: #1d2631;
+}
+
+.application__slogan {
+  display: none;
+}
+
+.application__button-download {
+  display: block;
+  padding: 10px 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+
+.application__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 30px;
+  margin-bottom: 15px;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.application__item {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+
+  &--iphone {
+    background: url('../img/logo-apple.svg') no-repeat center;
+  }
+  &--android {
+    background: url('../img/logo-android.svg') no-repeat center;
+  }
+  &--windows {
+    background: url('../img/logo-windows.svg') no-repeat center;
+  }
+}
+
+.application__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300px;
+  text-align: center;
+  color: #ffffff;
 }
 
 @media(min-width: $tablet-width) {
@@ -8,13 +63,43 @@
     margin: 0;
     position: absolute;
     width: 300px;
-    top: 210px;
-    left: 0;
+    top: 140px;
+    left: calc(50% - 330px);
+    background: none;
+  }
+
+  .application__slogan {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    line-height: normal;
+    font-weight: 300;
+    color: #ffffff;
   }
 }
 
 @media(min-width: $desktop-width) {
   .application {
-    top: 220px;
+    left: 30%;
+  }
+  .application__slogan {
+    font-size: 50px;
+  }
+
+  .application__button-download {
+    margin-bottom: 55px;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #d22856;
+    }
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  .application__list {
+    margin-bottom: 35px;
   }
 }

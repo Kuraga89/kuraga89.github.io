@@ -1,13 +1,26 @@
 .main-nav {
-  position: relative;
+  min-height: 462px;
+  background:
+  url('../img/iphone-6.png') no-repeat 50% bottom,
+  url('../img/back.jpg') no-repeat center top;
+  background-size: 260px, cover;
 }
 
+.main-nav__container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10; //для перекрытия application на планшетной  версии
+}
+
+
+
 .main-nav__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  padding: 22px 20px;
+  padding: 22px 0;
 }
 
 .main-nav__list {
@@ -16,37 +29,126 @@
   padding: 0;
 }
 
-.main-nav__toggle {
-  border: none;
-}
-
-.main-nav__closed .main-nav__toggle {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 24px;
-  background-color: red;
-}
-
-.main-nav__logo-image {
+.main-nav__logo {
+  display: block;
   width: 75px;
   height: 22px;
+  margin-left: 20px;
 }
 
+  .main-nav__toggle {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    z-index: 100;
+    top: 21px;
+    right: 20px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+
+@media(max-width: $mobile-tablet-width-only){
+
+  .main-nav--opened .main-nav__container {
+    background-color: #283645;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    padding-bottom: 0;
+  }
+
+
+  .main-nav--closed .main-nav__toggle {
+    width: 50px;
+    height: 24px;
+
+    background-image: url('../img/button-close.svg');
+    &:hover,
+    &:focus {
+      background-image: url('../img/button-close-hover.svg');
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    width: 24px;
+    height: 23px;
+
+    background-image: url('../img/button-open.svg');
+    &:hover,
+    &:focus {
+      background-image: url('../img/button-open-hover.svg');
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__container {
+    background-color: #283645;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    padding-bottom: 0;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
 
 @media(min-width: $tablet-width) {
+  .main-nav {
+    min-height: 740px;
+    background:
+    url('../img/iphone-6.png') no-repeat 70% bottom,
+    url('../img/back.jpg') no-repeat center top;
+    background-size: 480px, cover;
+  }
+
   .main-nav__wrapper {
-    width: 620px;
+    width: 660px;
+    padding: 27px 0 43px 0;
+  }
+
+  .main-nav__toggle {
+    top: 44px;
+  }
+
+  .main-nav__logo {
+    width: 147px;
+    height: 40px;
   }
 }
 
 @media(min-width: $desktop-width) {
+  .main-nav {
+    min-height: 855px;
+    background:
+      url('../img/iphone-6.png') no-repeat 70% bottom,
+      url('../img/back.jpg') no-repeat center top;
+    background-size: 550px, cover;
+  }
   .main-nav__wrapper {
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__logo {

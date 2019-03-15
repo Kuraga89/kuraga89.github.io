@@ -2,27 +2,27 @@
   font-weight: 400;
   font-family: "Open Sans";
   font-style: normal;
-  src: 
-    url('fonts/OpenSans.woff') format('woff'),
-    url('fonts/OpenSans.woff2') format('woff2');
+  src:
+    url('../fonts/OpenSans.woff') format('woff'),
+    url('../fonts/OpenSans.woff2') format('woff2');
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Open Sans";
   font-style: normal;
-  src: 
-    url('fonts/OpenSansBold.woff') format('woff'),
-    url('fonts/OpenSansBold.woff2') format('woff2');
+  src:
+    url('../fonts/OpenSansBold.woff') format('woff'),
+    url('../fonts/OpenSansBold.woff2') format('woff2');
 }
 
 @font-face {
   font-weight: 300;
   font-family: "Open Sans";
   font-style: normal;
-  src: 
-    url('fonts/OpenSansLight.woff') format('woff'),
-    url('fonts/OpenSansLight.woff2') format('woff2');
+  src:
+    url('../fonts/OpenSansLight.woff') format('woff'),
+    url('../fonts/OpenSansLight.woff2') format('woff2');
 }
 
 body {
