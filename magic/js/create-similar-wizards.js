@@ -30,21 +30,32 @@
 		var wizardElement = similarWizardTemplate.cloneNode(true);
 
 		wizardElement.querySelector('.setup-similar-label').textContent = wizard.name;
-		wizardElement.querySelector('.wizard-coat').style.fill = wizard.coatColor;
+		wizardElement.querySelector('.wizard-coat').style.fill = wizard.colorCoat;
 		wizardElement.querySelector('.wizard-eyes').style.fill = wizard.eyesColor;
 
 		return wizardElement;
 	};
 
 	var showWizards = function() {
-		var fragment = document.createDocumentFragment();
 
-		for(var i = 0; i < wizardsList.length; i++) {
-			fragment.appendChild(renderWizards(wizardsList[i]));
-		}
+		window.backend.load(function(wizards) {
+			var fragment = document.createDocumentFragment();
 
-		similarListElement.appendChild(fragment);
-		window.setup.querySelector('.setup-similar').classList.remove('hidden'); 
+			for(var i = 0; i < 4; i++) {
+				fragment.appendChild(renderWizards(wizards[i]));
+			};
+			similarListElement.appendChild(fragment);
+			window.setup.querySelector('.setup-similar').classList.remove('hidden'); 			
+		});		
+
+		// отправляем данные из формы на сервер
+		var form = document.querySelector('.setup-wizard-form');
+		form.addEventListener('submit', function(evt) {
+			window.backend.save(new FormData(form), function(response) {
+				window.setup.classList.add('hidden');
+			});
+			evt.preventDefault();
+		});
 	};
 
 	showWizards();

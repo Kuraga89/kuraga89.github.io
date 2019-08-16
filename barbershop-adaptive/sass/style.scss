@@ -1,16 +1,9 @@
 @import "variables.scss";
 @import "scaffolding.scss";
-@import "outlines.scss";
 
 /* blocks */
-
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/stat.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
-@import "blocks/stat.scss";
-@import "blocks/advantages.scss";
-@import "blocks/news.scss";
-@import "blocks/reviews.scss";
-@import "blocks/page-footer.scss";
+@import "blocks/stats.scss";

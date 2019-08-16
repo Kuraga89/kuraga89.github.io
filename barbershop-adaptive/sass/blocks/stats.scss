@@ -1,0 +1,46 @@
+.stats {
+  width: 320px;
+  margin: 0 auto;
+
+}
+
+.stats__header {
+  padding: 25px 20px;
+
+
+  outline: 2px solid green;
+}
+
+.stats__list {
+  width: 100%;
+
+  outline: 2px solid red;
+}
+
+@media(min-width: $tablet-width) {
+  .stats {
+    width: 640px;
+    margin-top: -187px;
+  }
+
+  .stats__header {
+  }
+
+  .stats__list {
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .stats {
+    width: 960px;
+    display: flex;
+  }
+
+  .stats__header {
+    width: 320px;
+  }
+
+  .stats__list {
+    width: 640px;
+  }
+}

@@ -53,11 +53,16 @@
 					y: moveEvt.clientY
 				};
 
-				/*if(moveEvt.clientX - pins.offsetWidth > 0) {
+				if(window.util.getCoords(pins).left + pins.offsetWidth < moveEvt.clientX) {
 					mapPinMain.style.left = pins.offsetWidth + 'px';
-				};*/
+				} else if(moveEvt.clientX < window.util.getCoords(pins).left) {
+					mapPinMain.style.left = '0px';
+				} else if(window.util.getCoords(pins).top + pins.offsetHeight < moveEvt.clientY) {
+					mapPinMain.style.top = pins.offsetHeight + 'px';
+				} else if (moveEvt.clientY < window.util.getCoords(pins).top) {
+					mapPinMain.style.top = '0px';
+				};
 
-				console.log(pins.getBoundingClientRect());
 
 				mapPinMain.style.top = (mapPinMain.offsetTop - shift.y) + 'px';
 				mapPinMain.style.left = (mapPinMain.offsetLeft - shift.x) + 'px';
