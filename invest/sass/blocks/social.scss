@@ -1,0 +1,44 @@
+
+ .social {
+  align-self: flex-end;
+ }
+
+ .social__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ .social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+ }
+
+ .social__link {
+  display: block;
+  font-size: 0;
+  width: 36px;
+  height: 36px;
+
+  background-repeat: no-repeat;
+
+  &--facebook {
+    background-image: url("../img/icon/social/facebook.svg");
+  }
+
+  &--instagram {
+    background-image: url("../img/icon/social/instagram.svg");
+  }
+
+  &--vkontakte {
+    background-image: url("../img/icon/social/vk.svg");
+  }
+
+  &--odnoklassniki {
+    background-image: url("../img/icon/social/ok.svg");
+  }
+ }

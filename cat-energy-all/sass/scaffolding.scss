@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/Oswaldregular.woff") format("woff"),
+       url("/fonts/Oswaldregular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: bold;
+  src: url("/fonts/Oswaldbold.woff") format("woff"),
+       url("/fonts/Oswaldnold.woff2") format("woff2");
+}
+
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-style: normal;
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  padding: 10px 0;
+
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

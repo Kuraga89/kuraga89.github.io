@@ -1,0 +1,39 @@
+/*
+<nav class="investments">
+ <ul class="investments__list">
+  <li class="investments__item investments__item--map">
+   <a href="#">
+    <h4 class="investments__title">Инвестиционная карта</h4>
+  </a>
+</li>
+<li class="investments__item investments__item--pasport">
+ <a href="#">
+  <h4 class="investments__title">Инвестиционный паспорт</h4>
+</a>
+</li>
+<li class="investments__item investments__item--strategy">
+ <a href="#">
+  <h4 class="investments__title">стратегия развития Югорска 2030</h4>
+</a>
+</li>
+</ul>
+</nav>
+*/
+.investments {
+
+}
+
+.investments__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.investments__item {
+  width: 258px;
+  height: 170px;
+
+  border: 2px solid #2d68a7;
+}

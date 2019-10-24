@@ -2,246 +2,151 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Инвестиционный портал города Югорска</title>
+	<title>Функциональное питание для котов "Cat Energy"</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="page-wrapper">
-		<nav class="main-nav">
 
-			<form action="" class="main-nav__search-form search-form">
-				<input type="text" class="search-form__input">
-				<button class="search-form__button">Поиск</button>
-			</form>
+  <header class="main-header">
+    <nav class="main-nav main-nav--opened">
+      <a href="#" class="main-nav__logo">
+        <picture>
+          <source srcset = "img/logo-desktop.svg" media="(min-width: 1200px)">
+            <source srcset = "img/logo-tablet.svg" media="(min-width: 768px)" >
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg">
+            </picture>
+          </a>
+          <button class="main-nav__toggle"></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="programms.html">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </header>
 
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item site-list__item--policy">
-					<a href="#">Инвестиционная политика</a>
-				</li>
-				<li class="site-list__item site-list__item--support">
-					<a href="#">Поддержка инвестдеятельности</a>
-				</li>
-				<li class="site-list__item site-list__item--guide">
-					<a href="#">Путеводитель инвестора</a>
-				</li>
-				<li class="site-list__item site-list__item--partnership">
-					<a href="#">Муниципально-частное партнерство, концессия</a>
-				</li>
-				<li class="site-list__item site-list__item--enterprise">
-					<a href="#">Предпринимательство</a>
-				</li>
-				<li class="site-list__item site-list__item--council">
-					<a href="#">Инвестиционный совет и рабочие комиссии</a>
-				</li>
-				<li class="site-list__item site-list__item--development">
-					<a href="#">Институты развития</a>
-				</li>
-				<li class="site-list__item site-list__item--programs">
-					<a href="#">Программа комплексного развития</a>
-				</li>
-				<li class="site-list__item site-list__item--urban">
-					<a href="#">Градостроительная документация</a>
-				</li>
-				<li class="site-list__item site-list__item--project">
-					<a href="#">Проектная деятельность</a>
-				</li>
-				<li class="site-list__item site-list__item--industry">
-					<a href="#">Промышленная политика</a>
-				</li>
-			</ul>
+      <main class="page-main">
+        <section class="programms">
+          <div class="programms__wrapper">
+            <h1 class="programms__title">Функциональное питание для котов</h1>
+            <p class="programms__slogan">Занялся собой? Займись котом</p>
+            <a href="programms.html" class="button programms__button">Подобрать программу</a>
+          </div>
+        </section>
 
-			<section class="contacts">
-				<p class="contacts__info">Управление проектной деятельности и инвестиций департамента экономического развития и проектного управления администрации города Югорска</p>
-				<p class="contacts__address">628260, Россия, Ханты-Мансийский автономный округ-Югра Тюменская область, г.Югорск,ул. 40 лет Победы, 11</p>
-				<p class="contacts__connection">
-					<b class="contacts__phone">8(34675)5-00-41</b>
-					<a class="contacts__email" href="mailto:RezinkinaGV@ugorsk.ru">RezinkinaGV@ugorsk.ru</a>
-				</p>
-			</section>
+        <section class="lines">
+          <div class="lines__item lines__item--skiny">
+            <h3 class="line__title">Похудение</h2>
+              <p class="line__description">
+                Ваш кот весит больше собаки и почти утратил способность
+                лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+                вашему питомцу сбросить лишний вес.
+              </p>
+              <a href="#" class="line__link">Каталог slim</a>
+            </div>
+            <div class="lines__item lines__item--muscle">
+              <h3 class="line__title">Набор массы</h2>
+                <p class="line__description">
+                  Заработать авторитет среди дворовых котов и даже собак?
+                  Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                </p>
+                <a href="#" class="line__link">Каталог pro</a>
+              </div>
+            </section>
 
-		</nav>
+            <section class="advantages">
+              <h2 class="advantages__title">Как это работает</h2>
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item--one">
+                  <p class="advantages__description">
+                    Функциональное питание содержит только полезные питательные вещества.
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item--two">
+                  <p class="advantages__description">
+                    Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item--three">
+                  <p class="advantages__description">
+                    Замените один-два приема обычной еды на наше фунцкциональное питание.
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item--four">
+                  <p class="advantages__description">
+                    Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+                  </p>
+                </li>
+              </ul>
+            </section>
 
-		<div class="page-container">
-			<header class="page-header">
-				<div class="page-header__wrapper">
+            <section class="example">
+              <div class="example__wrapper">
+                <div class="example__left">
+                  <h2 class="example__title">Живой пример</h2>
+                  <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                  <div class="example__results results">
+                    <p class="example__item results__item">
+                      5 кг <span class="results__text">снижение<br> веса</span>
+                    </p>
+                    <p class="example__item results__item">
+                      60 дней <span class="results__text">затрачено<br> времени</span>
+                    </p>
+                  </div>
+                  <div class="example__expenses">
+                    <p class="example__expenses-title">Затраты на питание:</p>
+                    <p class="example__price">15 000 руб.</p>
+                  </div>
+                </div>
+                <div class="example__right">
+                  <div class="example__image"></div>
+                  <div class="example__slider range-controls">
+                    <div class="range__wrapper">
+                      <div class="range-controls__scale"></div>
+                      <div class="range-controls__toggle"></div>
+                      <span class="range-controls__text  range-controls__text--before">Было</span>
+                      <span class="range-controls__text  range-controls__text--after">Стало</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
 
-					<div class="page-header__logo-block logo-block">
-
-						<ul class="logo-block__lang-switcher lang-switcher">
-							<li class="lang-switcher__item">
-								<a href="#" class="lang-switcher__link lang-switcher__link--active">RU</a>
-							</li>
-							<li class="lang-switcher__item">
-								<a href="#" class="lang-switcher__link">EN</a>
-							</li>
-						</ul>
-
-						<div class="logo-block__logo logo">
-							<img src="" alt="" class="logo__image">
-							<h1 class="logo__title">Инвестиционный портал <span>Города Югорска</span></h1>
-						</div>
-
-					</div>
-
-					<div class="page-header__communication communication">
-						<div class="communication__social social">
-							<ul class="social__list">
-								<li class="social__item">
-									<a href="#" class="social__link social__link--facebook">Мы в facebook</a>
-								</li>
-								<li class="social__item">
-									<a href="#" class="social__link social__link--instagram">Мы в instagram</a>
-								</li>
-								<li class="social__item">
-									<a href="#" class="social__link social__link--vkontakte">Мы вконтакте</a>
-								</li>
-								<li class="social__item">
-									<a href="#" class="social__link social__link--odnoklassniki">Мы в одноклассниках</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="communication__buttons buttons">
-							<ul class="buttons__list">
-								<li class="buttons__item button button--line">
-									<a href="#" class="buttons__link">горячая линия</a>
-								</li>
-								<li class="buttons__item button button--canal">
-									<a href="#" class="buttons__link">Канал прямой связи</a>
-								</li>
-							</ul>
-						</div>
-
-					</div>
-
-				</div>
-			</header>
-
-			<main class="page-main">
-				<section class="main-slider slider">
-					<ul class="slider__list">
-						<li class="slider__item">
-							<h3 class="slider__title">Меры поддержки малого и среднего предпринимательства в г. Югорске</h3>
-							<img src="#" alt="" class="slider__picture">
-						</li>
-						<li class="slider__item">
-							<h3 class="slider__title">Меры поддержки малого и среднего предпринимательства в г. Югорске</h3>
-							<img src="#" alt="" class="slider__picture">
-						</li>
-						<li class="slider__item">
-							<h3 class="slider__title">Меры поддержки малого и среднего предпринимательства в г. Югорске</h3>
-							<img src="#" alt="" class="slider__picture">
-						</li>
-					</ul>
-					<button class="slider__button slider__button--prev">Вперед</button>
-					<button class="slider__button slider__button--next">Назад</button>
-					<p class="slider__toggles">
-						<span class="slider__toggle slider__toggle--active"></span>
-						<span class="slider__toggle"></span>
-						<span class="slider__toggle"></span>
-						<span class="slider__toggle"></span>
-					</p>
-				</section>
-
-				<nav class="investments">
-					<ul class="investments__list">
-						<li class="investments__item investments__item--map">
-							<a href="#">
-								<h4 class="investments__title">Инвестиционная карта</h4>
-							</a>
-						</li>
-						<li class="investments__item investments__item--pasport">
-							<a href="#">
-								<h4 class="investments__title">Инвестиционный паспорт</h4>
-							</a>
-						</li>
-						<li class="investments__item investments__item--strategy">
-							<a href="#">
-								<h4 class="investments__title">стратегия развития Югорска 2030</h4>
-							</a>
-						</li>
-					</ul>
-				</nav>
-
-				<section class="news">
-					<h2 class="news__title">Новости</h2>
-					<ul class="news__list">
-						<li class="news__item">
-							<h4 class="news__title">Состоялось сорок четвертое заседание совета по вопросам развития инвестиционной деятельности в Югорске</h4>
-							<time class="news__date" datetime = "2019-09-09">12 августа 2019</time>
-							<img src="#" alt="" class="news__picture">
-						</li>
-						<li class="news__item">
-							<h4 class="news__title">Состоялось сорок четвертое заседание совета по вопросам развития инвестиционной деятельности в Югорске</h4>
-							<time class="news__date" datetime = "2019-09-09">12 августа 2019</time>
-							<img src="#" alt="" class="news__picture">
-						</li>
-						<li class="news__item">
-							<h4 class="news__title">Состоялось сорок четвертое заседание совета по вопросам развития инвестиционной деятельности в Югорске</h4>
-							<time class="news__date" datetime = "2019-09-09">12 августа 2019</time>
-							<img src="#" alt="" class="news__picture">
-						</li>
-						<li class="news__item">
-							<h4 class="news__title">Состоялось сорок четвертое заседание совета по вопросам развития инвестиционной деятельности в Югорске</h4>
-							<time class="news__date" datetime = "2019-09-09">12 августа 2019</time>
-							<img src="#" alt="" class="news__picture">
-						</li>
-					</ul>
-					<a href="" class="news__to-all button">Все новости</a>
-				</section>
-
-				<section class="useful-links">
-				<h2 class="useful__links__title">Полезные ссылки</h2>
-					<ul class="useful-links__list">
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-						<li class="useful-links__item">
-							<a href="#">
-								<img src="#" alt="" class="useful-links__picture">
-							</a>
-						</li>
-					</ul>
-				</section>
-			</main>
-		</div>
-	</div>
-
-</body>
-</html>
+          <footer class="main-footer">
+            <section class="footer-map map">
+              <div class="map__address">
+              <p class="map__slogan">Приглашаем<br> к сотрудничеству <br>дилеров!</p>
+                <p class="map__text">ул. Большая Конюшенная, д. 19/8 <span class="address__city">Санкт-Петербург</span></p>
+              </div>
+              <div class="map__image">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.1333030523444!2d63.33092521621681!3d61.3142622573465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43906cc772e7a9f5%3A0x2e1b39c0b55a525e!2z0YPQuy4gNDAg0LvQtdGCINCf0L7QsdC10LTRiywgMTEsINCu0LPQvtGA0YHQuiwg0KXQsNC90YLRiy3QnNCw0L3RgdC40LnRgdC60LjQuSDQsNCy0YLQvtC90L7QvNC90YvQuSDQvtC60YDRg9CzLCA2MjgyNjA!5e0!3m2!1sru!2sru!4v1568366578273!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </section>
+            <section class="footer-links">
+              <a class="footer-links__logo">
+                <svg class="footer-links__logo-image" width="128" height="24"><use xlink:href="img/sprite.svg#logo"></use></svg>
+              </a>
+              <div class="footer-links__social  social__wrapper">
+              <ul class="social-list">
+                <li class="social-list__item social-list__item--vk"><a href="#">
+                  <svg class="social-list__icon" width="22" height="12px"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                  Вконтакте</a></li>
+                  <li class="social-list__item social-list__item--instagram"><a href="#">
+                    <svg class="social-list__icon" width="16" height="16"><use xlink:href="img/sprite.svg#inst"></use></svg>
+                    instagram</a></li>
+                    <li class="social-list__item social-list__item--facebook"><a href="#">
+                      <svg class="social-list__icon" width="10" height="19"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                      facebook</a></li>
+                    </ul>
+                    </div>
+                    <p class="footer-links__copyright">
+                      <a href="#" class="footer-links__copyright-link">HTML Academy
+                        <svg class="footer-links__copyright-image" width="27" height="34"><use xlink:href="img/sprite.svg#copyright"></use></svg>
+                      </a>
+                    </p>
+                  </section>
+                </footer>
+              </body>
+              </html>

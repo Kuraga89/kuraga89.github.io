@@ -1,0 +1,39 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 60px 30px 45px 30px;
+
+  background-color: #182a3e;
+}
+
+.main-nav__search-form {
+  position: relative;
+  margin-bottom:  40px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    margin-right: -30px;
+    margin-left: -30px;
+    left: 0;
+    right: 0;
+    top: 70px;
+    height: 4px;
+
+    background-color: #fff;
+    opacity: 0.4;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px; // чтобы margin не схлопывались
+}
+
+.main-nav__contacts {
+  margin-top: 150px;
+}
+
+

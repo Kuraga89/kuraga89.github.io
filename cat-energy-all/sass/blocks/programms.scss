@@ -1,0 +1,123 @@
+.programms {
+  min-height: 306px;
+  background-image: url("../img/index-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+}
+
+.programms__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 0 20px;
+  min-height: 480px;
+
+  background-image: url("../img/index-can-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 167px;
+}
+
+.programms__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.programms__slogan {
+  margin-top: 20px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.programms__button {
+  margin-top: 305px;
+  width: 100%;
+}
+
+@media(min-width: $tablet-width) {
+  .programms {
+    background: none;
+  }
+
+  .programms__wrapper {
+    width: 708px;
+    min-height: 847px;
+    margin-bottom: 0;
+
+    background-image: url("../img/index-can-tablet.jpg");
+    background-position: center bottom;
+  }
+
+  .programms__title {
+    width: 427px;
+    padding-top: 40px;
+    margin-left: 90px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+
+    color: #000;
+  }
+
+  .programms__slogan {
+    margin-left: 90px;
+    margin-top: 30px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+
+    color: #000;
+  }
+
+  .programms__button {
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .programms {
+    position: relative;
+    margin-top: -700px;
+  }
+
+  .programms__wrapper {
+    width: 1220px;
+    min-height: 568px;
+    background-image: url("../img/index-can.png");
+    background-position: 450px bottom;
+  }
+
+  .programms__title {
+    margin-top: 50px;
+    margin-left: 84px;
+  }
+
+  .programms__slogan {
+    margin-top: 35px;
+    margin-left: 84px;
+  }
+
+  .programms__button {
+    margin-top: 50px;
+    margin-left: 84px;
+  }
+}

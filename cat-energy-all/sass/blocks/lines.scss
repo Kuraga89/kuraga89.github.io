@@ -1,0 +1,238 @@
+.lines {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.lines__item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background-color: #f2f2f2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 20;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  &--skiny {
+   &::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 23px;
+    width: 35px;
+    height: 49px;
+
+    background-image: url("../img/lines-skinny.svg");
+    background-repeat: no-repeat;
+    transform: scale(-1, 1);
+  }
+}
+
+&--muscle {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 34px;
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/lines-muscle.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+}
+}
+
+
+.line__title {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 70px;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.line__description {
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 25px;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.line__link {
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+  padding-right: 38px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+
+  color: #000;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 0;
+
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/lines-arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .lines {
+    width: 708px;
+  }
+
+  .lines__item {
+    padding-top: 70px;
+    padding-left: 52px;
+    margin-bottom: 30px;
+
+    &::before {
+      top: 90px;
+      right: 63px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--skiny {
+     &::after {
+      width: 140px;
+      height: 194px;
+      left: 475px;
+      top: 80px;
+
+      background-image: url("../img/lines-skinny-tablet.svg");
+      transform: none;
+    }
+  }
+
+  &--muscle {
+   &::after{
+    width: 268px;
+    height: 112px;
+    left: 411px;
+    top: 135px;
+
+    background-image: url("../img/lines-muscle-tablet.svg");
+  }
+}
+}
+
+.line__title  {
+  padding-left: 0;
+  width: 380px;
+
+  font-size: 36px;
+  line-height: 37px;
+}
+
+.line__description {
+  width: 380px;
+  margin-top: 25px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+}
+
+.line__link {
+  padding-right: 50px;
+  padding-top: 45px;
+  padding-bottom: 30px ;
+
+  font-size: 20px;
+
+  &::after {
+    top: 50px;
+  }
+}
+}
+
+@media(min-width: $desktop-width) {
+ .lines {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 1220px;
+}
+
+.lines__item  {
+  padding: 70px 50px 55px 50px;
+  width: 470px;
+
+  &::before {
+    width: 100px;
+    height: 100px;
+    top: 48px;
+    left: 50px;
+  }
+
+  &--skiny {
+    &::after {
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      left: 66px;
+
+      background-image: url("../img/lines-skinny-desktop.svg");
+    }
+  }
+
+  &--muscle {
+    &::after{
+      width: 134px;
+      height: 56px;
+      top: 69px;
+      left: 34px;
+      background-image: url("../img/lines-muscle-desktop.svg");
+    }
+  }
+}
+
+.line__title {
+  margin-left: 167px;
+}
+
+.line__description {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.line__link {
+  padding-top: 25px;
+  padding-bottom: 0;
+
+  &::after {
+    top: 30px;
+  }
+}
+}

@@ -1,0 +1,98 @@
+.main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__logo {
+  display: block;
+  height: 67px;
+
+  background-image: url('../img/logo-mobile-img.png');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:focus {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-image {
+  width: 101px;
+  height: 18px;
+
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  width: 25px;
+  height: 20px;
+
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+
+  &::after{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: '';
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #000000;
+
+    box-shadow:
+      0 7px 0 0 #000000,
+      0 -7px 0 0 #000000;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    width: 708px;
+    justify-content: space-between;
+  }
+
+  .main-nav__logo {
+    width: 190px;
+    min-height: 100px;
+    background: none;
+  }
+
+  .main-nav__logo img {
+    width: 172px;
+    height: 58px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .main-nav {
+    width: 1220px;
+    min-height: 780px;
+    padding: 0 110px;
+
+    background-image: url('../img/index-background-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: right 0;
+  }
+
+  .main-nav__logo-image {
+    padding-top: 50px;
+  }
+
+}

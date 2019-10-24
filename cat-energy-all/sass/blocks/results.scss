@@ -1,0 +1,49 @@
+.results__item {
+  position: relative;
+  padding: 15px;
+  margin: 0;
+
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.results__text {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 88px;
+  margin-left: -44px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+  background-color: #f2f2f2;
+}
+
+@media(min-width: $tablet-width) {
+  .results__text {
+    width: 144px;
+    margin-left: -72px;
+
+    background-color: #fff;
+
+    br {
+      display: none;
+    }
+  }
+
+
+}
+
+@media(min-width: $desktop-width) {
+  .results__text {
+    background-color: #f2f2f2;
+  }
+}

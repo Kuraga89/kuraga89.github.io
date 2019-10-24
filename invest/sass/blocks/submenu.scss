@@ -1,0 +1,25 @@
+.submenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.submenu__item {
+}
+
+.submenu__link {
+  display: block;
+  margin-left: 45px;
+  margin-bottom: 5px;
+  padding: 5px 0 5px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  border-left: 1px solid transparent;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #274669;
+    border-left: 1px solid #ffffff;
+  }
+}

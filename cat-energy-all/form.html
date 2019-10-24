@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Функциональное питание для котов "Cat Energy"</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="main-nav main-nav--opened">
+      <a href="#" class="main-nav__logo">
+        <picture>
+          <source srcset = "img/logo-desktop.svg" media="(min-width: 1200px)">
+            <source srcset = "img/logo-tablet.svg" media="(min-width: 768px)" >
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg">
+            </picture>
+          </a>
+          <button class="main-nav__toggle"></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="programms.html">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page">
+        <h1 class="page__title">Подбор программы</h1>
+
+        <form action="#" method="post" class="profile">
+          <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <fieldset class="profile__fieldset profile__fieldset--about">
+            <legend class="visually-hidden">Данные кота</legend>
+            <div class="profile__left-column">
+              <p class="profile__item">
+                <label for="field-name">Имя:<sub>*</sub></label>
+                <input type="text" id="field-name" name="name" value = "Барсик">
+              </p>
+              <p class="profile__item">
+                <label for="field-weight">Вес (КГ):<sub>*</sub></label>
+                <input type="text" id="field-weight" name="weight" value = "7">
+              </p>
+              <p class="profile__item">
+                <label for="field-age">Возраст (лет):</label>
+                <input type="text" id="field-age" name="name" value = "7">
+              </p>
+            </div>
+            <div class="profile__right-column">
+              <p class="profile__item profile__item--radio">
+                <input class="visually-hidden" type="radio" name="change" id="field-skinny" value="skinny" checked><label for="field-skinny">Похудение</label>
+              </p>
+              <p class="profile__item profile__item--radio">
+                <input class="visually-hidden" type="radio" name="change" id="field-muscle" value="muscle"><label for="field-muscle">Набор массы</label>
+              </p>
+              <p class="profile__item profile__item--radio">
+                <input class="visually-hidden" type="radio" name="change" id="field-advice" value="advice"><label for="field-advice">Не знаю (нужен ваш совет)</label>
+              </p>
+            </div>
+          </fieldset>
+
+          <fieldset class="profile__fieldset profile__fieldset--contacts">
+            <h3 class="profile__title">Контантные данные <br> (владельца кота)</h3>
+            <p class="profile__item profile__item--email">
+              <label for="field-email">Email:<sub>*</sub></label>
+              <input type="email" id="field-email" name="email" value="kuklachev@gmail.com"> <svg class="profile__item--email-icon" width="17" height="13"><use xlink:href="img/sprite.svg#email"></use></svg>
+            </p>
+            <p class="profile__item profile__item--phone">
+              <label for="field-phone">Телефон:<sub>*</sub></label>
+              <input type="tel" id="field-phone" name="phone" value="8 (960) 900-60-90">
+              <svg class="profile__item--phone-icon" width="20" height="20"><use xlink:href="img/sprite.svg#phone"></use></svg>
+            </p>
+          </fieldset>
+
+          <fieldset class="profile__fieldset profile__fieldset--comments">
+            <h3 class="profile__title">Комментарии</h3>
+            <textarea class="profile__comments" name="" id="" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+
+          <fieldset class=" profile__fieldset profile__fieldset--additional">
+            <h3 class="profile__title">Дополнительно</h3>
+            <p class="profile__item profile__item--checkbox">
+              <input class="visually-hidden" type="checkbox" id="field-sweetener" name="additional" value="sweetener" checked>
+              <label for="field-sweetener">Сахарозаменитель</label>
+            </p>
+            <p class="profile__item profile__item--checkbox">
+              <input class="visually-hidden" type="checkbox" id="field-water" name="additional" value="water" checked>
+              <label for="field-water">питьевая вода</label>
+            </p>
+            <p class="profile__item profile__item--checkbox">
+            <input class="visually-hidden" type="checkbox" id="field-milk" name="additional" value="milk" checked>
+              <label for="field-milk">молоко</label>
+            </p>
+            <p class="profile__item profile__item--checkbox">
+              <input class="visually-hidden" type="checkbox" id="field-vitamins" name="additional" value="vitamins" checked>
+              <label for="field-vitamins">молоко</label>
+            </p>
+          </fieldset>
+
+          <input type="submit" class="profile__button buttton" value="Отправить заявку">
+          <p class="profile__sub">* - обязательные поля</p>
+        </form>
+      </main>
+
+      <footer class="main-footer">
+        <section class="footer-map map">
+          <img src=".png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+          <div class="map__address address">
+            <div class="address__wrapper">
+              <p class="address__slogan">Приглашаем к сотрудничеству дилеров!</p>
+              <p class="address__text">ул. Большая Конюшенная, д. 19/8 <span class="address__city">Санкт-Петербург</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="footer-links">
+          <a class="footer-links__logo logo-no-img">
+            <b class="logo-no-img__bold">Cat</b>
+            <span class="logo-no-img__light">Energy</span>
+          </a>
+          <ul class="footer-links__social social-list">
+            <li class="social-list__item social-list__item--vk"><a href="#">Вконтакте</a></li>
+            <li class="social-list__item social-list__item--instagram"><a href="#">instagram</a></li>
+            <li class="social-list__item social-list__item--facebook"><a href="#">facebook</a></li>
+          </ul>
+          <p class="footer-links__copyright copyright">
+            <a href="#" class="copyright__link">HTML Academy</a>
+          </p>
+        </section>
+      </footer>
+    </body>

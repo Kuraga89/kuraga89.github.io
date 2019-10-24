@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto.woff") format("woff"),
+       url("/fonts/Roboto.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: bold;
+  src: url("/fonts/Robotobold.woff") format("woff"),
+       url("/fonts/Robotobold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/fonts/Robotocondensed.woff") format("woff"),
+       url("/fonts/Robotocondensed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/fonts/exo2.woff") format("woff"),
+       url("/fonts/exo2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Exo";
+  font-weight: bold;
+  src: url("/fonts/exo2bold.woff") format("woff"),
+       url("/fonts/exo2bold.woff2") format("woff2");
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-style: normal;
+}
+
+.button {
+  display: block;
+  padding: 9px 15px;
+
+  text-decoration: none;
+
+  background-color: #4e9ff6;
+  color: #ffffff;
+  box-shadow: 3px 3px 0 0 #2d68a7;
+
+  &:hover {
+    background-color: #4792e2;
+  }
+
+}

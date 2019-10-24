@@ -1,0 +1,124 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-bottom: 2px solid #0e1932;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    box-shadow:
+    0 2px 0 0 #0e1932,
+    0 3px 0 0 rgba(255, 255, 255, 0.2);
+  }
+}
+
+.site-list__link {
+  padding-top: 15px;
+  padding-bottom:15px;
+  padding-right: 30px;
+  min-height: 30px;
+  display: block;
+  padding-left: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-repeat: no-repeat;
+
+  &:last-child {
+    padding-bottom: 12px;
+  }
+
+  &--policy {
+    background-image: url("../img/menu/policy-icon.svg");
+    background-position: 10px 5px;
+  }
+
+  &--support {
+    background-image: url("../img/menu/support-icon.svg");
+    background-position: 10px 13px;
+  }
+
+  &--guide {
+    background-image: url("../img/menu/guide-icon.svg");
+    background-position: 12px 13px;
+  }
+
+  &--offer {
+    background-image: url("../img/menu/offer-icon.svg");
+    background-position: 10px 15px;
+  }
+
+  &--offer {
+    background-image: url("../img/menu/offer-icon.svg");
+    background-position: 10px 15px;
+  }
+
+  &--partnership {
+    background-image: url("../img/menu/partnership-icon.svg");
+    background-position: 10px 12px;
+  }
+
+  &--enterprise {
+    background-image: url("../img/menu/enterprise-icon.svg");
+    background-position: 10px 10px;
+  }
+
+  &--council {
+    background-image: url("../img/menu/council-icon.svg");
+    background-position: 6px 18px;
+  }
+
+  &--development {
+    background-image: url("../img/menu/development-icon.svg");
+    background-position: 0 10px;
+  }
+
+  &--programs {
+    background-image: url("../img/menu/programs-icon.svg");
+    background-position: 3px 10px;
+  }
+
+  &--urban {
+    background-image: url("../img/menu/urban-icon.svg");
+    background-position: 8px 13px;
+  }
+
+  &--project {
+    background-image: url("../img/menu/project-icon.svg");
+    background-position: 8px 10px;
+  }
+
+  &--industry {
+    background-image: url("../img/menu/industry-icon.svg");
+    background-position: 8px 8px;
+  }
+}
+
+.site-list__parent {
+  background-image: url('../img/icon/arrow2-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right 15px;
+}
+
+.site-list__item--open {
+}
+
+.site-list__item--open .submenu {
+  display: block;
+}

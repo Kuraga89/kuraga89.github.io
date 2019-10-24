@@ -5,28 +5,152 @@
 }
 
 .stats__header {
-  padding: 25px 20px;
+  padding: 25px 25px;
 
+  color: #000;
+  background-color: #ffffff;
+}
 
-  outline: 2px solid green;
+.stats__slogan {
+  display: block;
+  padding-bottom: 15px;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stats__intro {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.stats__legend--top {
+  display: none;
 }
 
 .stats__list {
   width: 100%;
 
-  outline: 2px solid red;
+  border-collapse: collapse;
+}
+
+.stats__list tr {
+  &:nth-child(1) {
+    background-color: #404040;
+  }
+  &:nth-child(2) {
+    background-color: #4e4e4e;
+  }
+  &:nth-child(3) {
+    background-color: #353535;
+  }
+  &:nth-child(4) {
+    background-color: #404040;
+  }
+}
+
+.stats__value {
+  padding-left: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 18px;
+  vertical-align: midddle;
+}
+
+.stats__value sup {
+  line-height: 0;
+  font-size: 60%;
+}
+
+.stats__field {
+  padding: 17px 20px 17px 0;
+  text-align: right;
+  line-height: 18px;
+}
+
+.stats__legend {
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+.stats__legend--bottom {
+  display: block;
+  margin-top: 15px;
+
+  text-align: center;
 }
 
 @media(min-width: $tablet-width) {
   .stats {
+    position: relative;
     width: 640px;
     margin-top: -187px;
+    z-index: 2;
   }
 
   .stats__header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+  }
+
+  .stats__slogan {
+    width: 310px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .stats__intro {
+    width: 230px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
   }
 
   .stats__list {
+  }
+
+  .stats__legend--top {
+    display: block;
+  }
+
+  .stats__legend--bottom {
+    display: none;
+  }
+
+  tbody {
+    display: flex;
+    flex-wrap: wrap;
+
+    tr {
+      display: flex;
+      flex-direction: column;
+      width: 320px;
+    }
+  }
+
+  .stats__value {
+    padding-top: 25px;
+
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .stats__field {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  br {
+    display: none;
   }
 }
 
@@ -34,10 +158,11 @@
   .stats {
     width: 960px;
     display: flex;
+    margin-top: -160px;
   }
 
   .stats__header {
-    width: 320px;
+    width: 240px;
   }
 
   .stats__list {
