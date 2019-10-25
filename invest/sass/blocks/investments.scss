@@ -20,6 +20,8 @@
 </nav>
 */
 .investments {
+  margin-top: 20px;
+  margin-left: 25px;
 
 }
 
@@ -31,9 +33,46 @@
   padding: 0;
 }
 
-.investments__item {
+.investments__link {
+  display: block;
   width: 258px;
   height: 170px;
 
+  text-decoration: none;
+
   border: 2px solid #2d68a7;
+  background-repeat: no-repeat;
+
+  &:hover {
+    border-color: #4b98eb;
+  }
+
+  &--map {
+    background-image: url("../img/invest-menu/map.png");
+    background-position: center 42px;
+  }
+
+  &--pasport {
+    background-image: url("../img/invest-menu/pasport.png");
+    background-position: center 60px;
+  }
+
+  &--strategy {
+    background-image: url("../img/invest-menu/strategy.png");
+    background-position: center 60px;
+  }
+}
+
+.investments__title {
+  margin: 0 auto;
+  margin-top: 12px;
+  padding: 0;
+  max-width: 220px;
+
+  font-family: "Exo", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
 }
