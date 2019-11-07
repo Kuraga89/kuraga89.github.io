@@ -1,0 +1,42 @@
+/*
+<section class="useful-links">
+  <h2 class="useful__links__title">Полезные ссылки</h2>
+  <ul class="useful-links__list">
+    <li class="useful-links__item">
+     <a href="#">
+      <img src="#" alt="" class="useful-links__picture">
+    </a>
+  </li>
+  */
+
+  .useful-links {
+    margin-top: 45px;
+    margin-left: 25px;
+  }
+
+  .useful__links__title {
+    margin-bottom: 25px;
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .useful-links__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .useful-links__item {
+    margin-bottom: 15px;
+  }
+
+  .useful-links__link {
+    display: block;
+    width: 258px;
+    height: 65px;
+    border: 1px solid #2d68a7;
+  }
