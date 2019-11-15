@@ -135,7 +135,7 @@
      <a href="#" class="button feedback-buttons__link feedback-buttons__link--line ">Горячая линия</a>
    </li>
    <li class="feedback-buttons__item feedback-buttons__item">
-     <a href="#" class="button feedback-buttons__link feedback-buttons__link--canal ">Канал прямой связи</a>
+     <a href="#" class="button feedback-buttons__link feedback-buttons__link--canal ">Обратная связь</a>
    </li>
  </ul>
 </div>
@@ -313,6 +313,33 @@
 </main>
 </div>
 </div>
+
+<section class="modal modal-feedback">
+  <h2 class="modal__title">Обратная связь</h2>
+  <p class="modal__description">
+    Для решения вопросов, касающихся инвестиционной деятельности,
+    информационно-консультационного и организационного
+    сопровождения инвестиционных проектов, и оперативной обратной
+    связи инвестора с администрацией города Югорска предусмотрен
+    канал прямой связи.
+  </p>
+  <button class="modal__close" type="button">Закрыть</button>
+  <form action="" class="modal-feedback__form">
+    <p>
+      <label for="feedback-name" class="visually-hidden">Имя</label>
+      <input type="text" id="feedback-name" class="modal-feedback__input modal-feedback__input--name" placeholder="Ваше имя">
+    </p>
+    <p>
+      <label for="feedback-email" class="visually-hidden">Телефон</label>
+      <input type="tel" class="modal-feedback__input modal-feedback__input--email" placeholder="Телефон">
+    </p>
+    <p>
+      <textarea name="" id="" cols="30" rows="10" class="modal-feedback__textarea" placeholder="Текст сообщения"></textarea>
+    </p>
+    <button type="submit" class="button modal-feedback__button">Отправить</button>
+  </form>
+
+</section>
 
 <template id="template">
   <span class="slider__toggle"></span>
