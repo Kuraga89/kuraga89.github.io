@@ -2,16 +2,11 @@
 	var map = document.querySelector('.map');
 	var mainPin = map.querySelector('.map__pin--main');
 	var noticeForm = document.querySelector('.notice__form');
-
+if(map.classList.contains('map--faded')) {
 	mainPin.addEventListener('mousedown', function(evt) {
 		var onMouseMove = function(moveEvt) {
 			moveEvt.preventDefault();
-			map.classList.remove('map--faded');
-			noticeForm.classList.remove('notice__form--disabled');
-			window.switchFieldsetForm.enable();
-			window.showAddress();
-			window.showAllPins(window.pins);
-			window.showCard();
+			
 
 			var shift = {
 				x: startCoords.x - moveEvt.clientX,
@@ -29,6 +24,12 @@
 
 		var onMouseUp = function(upEvt) {
 			upEvt.preventDefault();
+			map.classList.remove('map--faded');
+			noticeForm.classList.remove('notice__form--disabled');
+			window.switchFieldsetForm.enable();
+			window.showAddress();
+			window.backend.load(window.onLoad, window.onError);
+			window.showCard();
 
 			document.removeEventListener('mousemove', onMouseMove);
 			document.removeEventListener('mouseup', onMouseUp);
@@ -44,5 +45,7 @@
 		document.addEventListener('mousemove', onMouseMove);
 		document.addEventListener('mouseup', onMouseUp);
 	});
+}
+	
 
 })()

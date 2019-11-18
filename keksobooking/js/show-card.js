@@ -80,20 +80,21 @@
 		window.showCard = function() {
 			// добавляем событие click на mapPins
 			map.addEventListener('click', function(evt) {
+				console.log(map.querySelector('.map__card'));
 
 				// target - элемент на котором кликнули
-				var target = evt.target;
+				var target = evt.target.parentNode;
 
 				// если элемент содержит класс map__pin и не содержит map__pin--main (главная метка)
 				if(target.classList.contains('map__pin') && !target.classList.contains('map__pin--main')) {
 					// то перебираем массив pins(с объектами)
-					for(i in pins) {
+					for(item of window.pins) {
 						// если у элемента id совпадает c id элемнта массова
-						if(pins[i].id == target.id) {
+						if(toString(item.location.x) + toString(item.location.y) == toString(target.style.left) + toString(target.style.top) ) {
 							// то удаляем карту, если она есть
 							hiddenCard();
 							// и вставляем новую карточку с новыми данными
-							map.insertBefore(renderCard(pins[i]), document.querySelector('.map__filters-container'));
+							map.insertBefore(renderCard(item), document.querySelector('.map__filters-container'));
 						}
 					}
 				}		
