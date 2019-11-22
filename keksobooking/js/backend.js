@@ -1,7 +1,7 @@
 (function() {
 	var URL = {
 		LOAD: 'https://js.dump.academy/keksobooking/data',
-		SAVE: 'https://js.dump.academy/keksobooking'
+		SAVE: 'https://js.dump.academy/keksobo oking'
 	}
 
 		window.backend = {
