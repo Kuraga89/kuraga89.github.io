@@ -6,20 +6,18 @@
 	var selectElements = form.querySelectorAll('select');
 	var previousValues = {};
 
-	var savePreviousValues = function() {
+	/*var savePreviousValues = function() {
 		selectElements.forEach(item => {
 			previousValues[item.id] = item.querySelector('option[selected]').value;
 		})
+		return previousValues;
 	}
 
-	savePreviousValues();
-	console.log(previousValues);
-
-	/*var validateSelect = function() {
+	var validateSelect= function() {
 		userCapacityInput.value > userRoomsInput.value ? userCapacityInput.setCustomValidity('Слишком много гостей для этой комнаты!') : userCapacityInput.setCustomValidity('');
 	}
 
-	userNameInput.addEventListener('invalid', function() {
+	userNameInput.addEventListener('invalid', function(evt) {
 		if(userNameInput.validity.tooShort) {
 			userNameInput.setCustomValidity('Слишком коротко!!!');
 		}
@@ -34,13 +32,16 @@
 		validateSelect();
 	});
 
-	validateSelect();
+	validateSelect(); */
+	var onError = function(message) {
+		console.log(message);
+	};
 
 	form.addEventListener('submit', function(evt) {
-		evt.preventDefault();
 		window.backend.save(new FormData(form), function(response) {
-			console.log('sss');
-		}, window.onError)		
-	});*/
+			console.log('111');
+		}, onError);
+		evt.preventDefault();
+	})
 
 })()

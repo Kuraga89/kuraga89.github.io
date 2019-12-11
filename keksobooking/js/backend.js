@@ -1,10 +1,10 @@
 (function() {
 	var URL = {
 		LOAD: 'https://js.dump.academy/keksobooking/data',
-		SAVE: 'https://js.dump.academy/keksobo oking'
+		SAVE: 'https://js.dump.academy/keksobooking'
 	}
-
-		window.backend = {
+	var URL_LOAD = '';
+	window.backend = {
 		load: function(onLoad, onError) {
 			var xhr = new XMLHttpRequest();
 
