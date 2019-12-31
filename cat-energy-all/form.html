@@ -19,9 +19,9 @@
           </a>
           <button class="main-nav__toggle"></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="programms.html">Подбор программы</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link" href="programms.html">Подбор программы</a></li>
           </ul>
         </nav>
       </header>
@@ -30,7 +30,7 @@
         <h1 class="page__title">Подбор программы</h1>
 
         <form action="#" method="post" class="profile">
-          <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <p class="profile__description">Заполните анкету и мы подберем <br/> программу питания для вашего кота</p>
           <fieldset class="profile__fieldset profile__fieldset--about">
             <legend class="visually-hidden">Данные кота</legend>
             <div class="profile__left-column">
@@ -98,34 +98,43 @@
             </p>
           </fieldset>
 
-          <input type="submit" class="profile__button buttton" value="Отправить заявку">
+          <input type="submit" class="profile__button button" value="Отправить заявку">
           <p class="profile__sub">* - обязательные поля</p>
         </form>
       </main>
 
       <footer class="main-footer">
-        <section class="footer-map map">
-          <img src=".png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-          <div class="map__address address">
-            <div class="address__wrapper">
-              <p class="address__slogan">Приглашаем к сотрудничеству дилеров!</p>
-              <p class="address__text">ул. Большая Конюшенная, д. 19/8 <span class="address__city">Санкт-Петербург</span></p>
-            </div>
-          </div>
-        </section>
-        <section class="footer-links">
-          <a class="footer-links__logo logo-no-img">
-            <b class="logo-no-img__bold">Cat</b>
-            <span class="logo-no-img__light">Energy</span>
-          </a>
-          <ul class="footer-links__social social-list">
-            <li class="social-list__item social-list__item--vk"><a href="#">Вконтакте</a></li>
-            <li class="social-list__item social-list__item--instagram"><a href="#">instagram</a></li>
-            <li class="social-list__item social-list__item--facebook"><a href="#">facebook</a></li>
-          </ul>
-          <p class="footer-links__copyright copyright">
-            <a href="#" class="copyright__link">HTML Academy</a>
-          </p>
-        </section>
-      </footer>
+            <section class="footer-map map">
+              <div class="map__address map__address--gray">
+              <p class="map__slogan">Приглашаем<br> к сотрудничеству <br>дилеров!</p>
+                <p class="map__text">ул. Большая Конюшенная, д. 19/8 <span class="address__city">Санкт-Петербург</span></p>
+              </div>
+              <div class="map__image">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.1333030523444!2d63.33092521621681!3d61.3142622573465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43906cc772e7a9f5%3A0x2e1b39c0b55a525e!2z0YPQuy4gNDAg0LvQtdGCINCf0L7QsdC10LTRiywgMTEsINCu0LPQvtGA0YHQuiwg0KXQsNC90YLRiy3QnNCw0L3RgdC40LnRgdC60LjQuSDQsNCy0YLQvtC90L7QvNC90YvQuSDQvtC60YDRg9CzLCA2MjgyNjA!5e0!3m2!1sru!2sru!4v1568366578273!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </section>
+            <section class="footer-links">
+              <a class="footer-links__logo">
+                <svg class="footer-links__logo-image" width="128" height="24"><use xlink:href="img/sprite.svg#logo"></use></svg>
+              </a>
+              <div class="footer-links__social  social__wrapper">
+              <ul class="social-list">
+                <li class="social-list__item social-list__item--vk"><a href="#">
+                  <svg class="social-list__icon" width="22" height="12px"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                  Вконтакте</a></li>
+                  <li class="social-list__item social-list__item--instagram"><a href="#">
+                    <svg class="social-list__icon" width="16" height="16"><use xlink:href="img/sprite.svg#inst"></use></svg>
+                    instagram</a></li>
+                    <li class="social-list__item social-list__item--facebook"><a href="#">
+                      <svg class="social-list__icon" width="10" height="19"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                      facebook</a></li>
+                    </ul>
+                    </div>
+                    <p class="footer-links__copyright">
+                      <a href="#" class="footer-links__copyright-link">HTML Academy
+                        <svg class="footer-links__copyright-image" width="27" height="34"><use xlink:href="img/sprite.svg#copyright"></use></svg>
+                      </a>
+                    </p>
+                  </section>
+                </footer>
     </body>

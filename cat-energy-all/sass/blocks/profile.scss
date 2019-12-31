@@ -166,6 +166,7 @@
   .profile__title {
     margin-bottom: 35px;
   }
+  margin-bottom: 43px;
 }
 
 .profile__item--checkbox {
@@ -174,6 +175,7 @@
   input[type=checkbox]~label {
     position: relative;
     padding-left: 45px;
+    cursor: pointer;
 
     &::before {
       content: '';
@@ -188,5 +190,100 @@
 
     }
   }
+
+  input[type=checkbox]:checked~label {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5px;
+
+      width: 21px;
+      height: 16px;
+
+      background-image: url('../img/check.svg');
+
+    }
+  }
 }
 
+.profile__button {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.profile__sub {
+  margin: 0;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+@media(min-width: $tablet-width) {
+  .profile {
+    padding: 0 70px;
+  }
+
+  .profile__description {
+    margin-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .profile__left-column {
+    padding: 0;
+    margin-bottom: 70px;
+    border: 0;
+  }
+
+  .profile__right-column {
+    padding: 25px 30px;
+
+    border: 1px solid #ededed;
+  }
+
+  .profile__fieldset {
+    margin-bottom: 70px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .profile__title {
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+
+      margin-top: 17px;
+      margin-right: 40px;
+      margin-left: -70px;
+      width: 30px;
+      height: 3px;
+
+      background-color: #68b738;
+    }
+
+    &::after {
+      margin-top: 17px;
+      margin-left: 40px;
+      margin-right: -70px;
+    }
+  }
+
+  .profile__item {
+    margin-bottom: 20px;
+
+    input[type=text],
+    input[type=email],
+    input[type=tel] {
+      font-size: 20px;
+    }
+  }
+}

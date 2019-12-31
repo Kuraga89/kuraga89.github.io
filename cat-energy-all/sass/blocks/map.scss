@@ -68,6 +68,12 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  &--gray {
+    background-color: #f2f2f2;
+    padding: 25px 20px;
+    margin-bottom: 0;
+  }
 }
 
 .map__slogan {

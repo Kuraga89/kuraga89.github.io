@@ -39,6 +39,10 @@
   .site-list__item {
     border: none;
     padding: 0;
+
+     &:last-child {
+      border: 0;
+     }
   }
 
   .site-list__item--active a{
