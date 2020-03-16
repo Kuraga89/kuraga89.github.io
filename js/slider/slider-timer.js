@@ -1,3 +1,3 @@
 (function() {
-  setInterval(window.showNextSliderItem, 10000);
+  setInterval(window.showNextSliderItem, 2000);
 })()
