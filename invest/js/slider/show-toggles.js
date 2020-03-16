@@ -4,6 +4,7 @@
   var sliderItems = sliderList.querySelectorAll('.slider__item');
   var templateToggle = document.querySelector('#template').content.querySelector('.slider__toggle');
   var togglesContainer = slider.querySelector('.slider__toggles');
+  var SLIDE_WIDTH = 860;
   //показываем переключатели снизу
   //создаем фрагмент
   var fragment = document.createDocumentFragment();
@@ -19,8 +20,15 @@
 
 
   [].forEach.call(togglesContainer.querySelectorAll('.slider__toggle'), function(item, index) {
-    item.addEventListener('click', function() {
-      console.log(sliderItems[index]);
+    item.addEventListener('click', function(evt) {
+      sliderList.style.left = -(index * SLIDE_WIDTH) + 'px';
+      var target = evt.target;
+      [].forEach.call(togglesContainer.querySelectorAll('.slider__toggle'), function(item) {
+        if(item.classList.contains('slider__toggle--active')) {
+          item.classList.remove('slider__toggle--active');
+        }
+      });
+      target.classList.add('slider__toggle--active');
     })
   })
 
